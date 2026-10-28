@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan zajęć – Semestr 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_zeszyt/zeszyt.css">
+<script src="_zeszyt/zeszyt.js"></script>
+<script src="_zeszyt/plan_data.js"></script>
+<style>
+  .bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-family: system-ui, sans-serif; font-size: 14px; margin: 10px 0 18px; }
+  .bar b { font-weight: 500; color: var(--ink-soft); margin-right: 2px; }
+  .bar button { font: inherit; font-size: 13px; padding: 4px 12px; border-radius: 999px; cursor: pointer; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); }
+  .bar button[aria-pressed="true"] { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+  .day { margin: 18px 0 6px; font-family: system-ui, sans-serif; font-weight: 700; font-size: 1rem; }
+  .day.today { color: var(--egz); }
+  .day .rel { font-weight: 400; color: var(--ink-soft); font-size: .85rem; margin-left: 6px; }
+  .cls { display: grid; grid-template-columns: 96px 1fr; gap: 2px 12px; background: var(--card); border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); border-radius: 6px; padding: 8px 12px; margin: 6px 0; font-size: .95rem; }
+  .cls.cw { border-left-color: var(--law); }
+  .cls.past { opacity: .5; }
+  .cls.now { outline: 2px solid var(--egz); }
+  .cls .t { font-family: system-ui, sans-serif; font-weight: 700; }
+  .cls .s { font-weight: 700; }
+  .cls .s a { text-decoration: none; }
+  .cls .m { grid-column: 2; font-size: .85rem; color: var(--ink-soft); font-family: system-ui, sans-serif; }
+  .tag { display: inline-block; font-family: system-ui, sans-serif; font-size: .7rem; font-weight: 700; padding: 0 6px; border-radius: 4px; margin-left: 6px; vertical-align: 2px; }
+  .tag.wyk { color: var(--accent); background: var(--accent-soft); }
+  .tag.cw { color: var(--law); background: var(--law-soft); }
+  .tag.gr { color: var(--ink-soft); border: 1px solid var(--line-strong); }
+  .empty-msg { color: var(--ink-soft); font-style: italic; }
+  @media (max-width: 500px) { .cls { grid-template-columns: 1fr; } .cls .m { grid-column: 1; } }
+</style>
+</head>
+<body>
+<header class="toolbar">
+  <div class="crumbs"><a href="index.html">Zeszyt</a> <span>/</span> Plan zajęć</div>
+  <div class="switch" id="paper-switch"><b>Tło:</b></div>
+  <div class="switch" id="theme-switch"><b>Motyw:</b></div>
+</header>
+
+<main class="page">
+  <h1>Plan zajęć</h1>
+  <p class="subtitle">Prawo, jednolite magisterskie, rok 1 (s1JMP) · kopia z 21.10.2026 · aktualny plan: <a href="http://plan.pwsz.legnica.edu.pl/checkSpecjalnoscStac.php?specjalnosc=s1JMP">plan.pwsz.legnica.edu.pl</a></p>
+
+  <div class="bar" id="grp"><b>Moja grupa ćwiczeniowa:</b>
+    <button type="button" data-g="1">1u</button>
+    <button type="button" data-g="2">2u</button>
+    <button type="button" data-g="all">obie</button>
+  </div>
+  <div class="bar" id="rng"><b>Pokaż:</b>
+    <button type="button" data-r="week">najbliższe 7 dni</button>
+    <button type="button" data-r="future">wszystko od dziś</button>
+    <button type="button" data-r="all">cały semestr</button>
+  </div>
+  <div class="bar" id="typ"><b>Rodzaj:</b>
+    <button type="button" data-t="all">wszystko</button>
+    <button type="button" data-t="wyk">tylko wykłady</button>
+    <button type="button" data-t="cw">tylko ćwiczenia</button>
+  </div>
+
+  <div id="list"></div>
+
+  <details class="sources">
+    <summary>Skróty i prowadzący</summary>
+    <div id="legend"></div>
+  </details>
+
+  <footer>Plan może się zmienić. Przed zajęciami w sali sprawdź aktualny plan na stronie uczelni.</footer>
+</main>
+
+<script>
+(function () {
+  const S = {
+    "Pr": ["Prawo rzymskie", "Prawo%20Rzymskie"],
+    "Tifp": ["Teoria i filozofia prawa", "Teoria%20i%20Filozofia%20Prawa"],
+    "Prawo": ["Prawoznawstwo", "Prawoznawstwo"],
+    "Hdpip": ["Historia doktryn politycznych i prawnych", "Historia%20Doktryn%20Politycznych%20i%20Prawnych"],
+    "So": ["Spotkanie organizacyjne", "Sprawy%20Organizacyjne"],
+    "S-Wswpk": ["Szkolenie: wsparcie studentów", "Sprawy%20Organizacyjne"],
+    "Ps": ["Podstawy socjologii", "Podstawy%20Socjologii"],
+    "Pk": ["Prawo konstytucyjne", "Prawo%20Konstytucyjne"],
+    "Filoz": ["Filozofia", "Filozofia"],
+    "Tiisi": ["Technologie informacyjne i SI", "Technologie%20Informacyjne%20i%20SI"],
+    "Aiwp": ["Autoprezentacja i wystąpienia publiczne", "Autoprezentacja%20i%20Wystapienia%20Publiczne"],
+    "Owi": ["Ochrona własności intelektualnej", "Ochrona%20Wlasnosci%20Intelektualnej"],
+    "Epp": ["Etyka profesjonalizmu prawnika", "Etyka%20Profesjonalizmu%20Prawnika"],
+    "Pjłdp": ["Łacina dla prawników", "Jezyk%20Lacinski%20dla%20Prawnikow"],
+    "Lp": ["Logika prawnicza", "Logika%20Prawnicza"]
+  };
+  const DAYS = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+  let grp = store.get("plan.grp", "1"), rng = store.get("plan.rng", "week"), typ = store.get("plan.typ", "all");
+
+  const pad = n => String(n).padStart(2, "0");
+  const iso = d => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const now = new Date(), today = iso(now), nowHM = pad(now.getHours()) + ":" + pad(now.getMinutes());
+  const week = new Date(now); week.setDate(week.getDate() + 7); const weekEnd = iso(week);
+
+  function rel(day) {
+    const a = new Date(today + "T00:00"), b = new Date(day + "T00:00");
+    const diff = Math.round((b - a) / 864e5);
+    if (diff === 0) return "dziś"; if (diff === 1) return "jutro"; if (diff === -1) return "wczoraj";
+    return diff > 0 ? "za " + diff + " dni" : diff + " dni";
+  }
+
+  function render() {
+    document.querySelectorAll("#grp button").forEach(b => b.setAttribute("aria-pressed", b.dataset.g === grp));
+    document.querySelectorAll("#rng button").forEach(b => b.setAttribute("aria-pressed", b.dataset.r === rng));
+    document.querySelectorAll("#typ button").forEach(b => b.setAttribute("aria-pressed", b.dataset.t === typ));
+    const rows = (window.PLAN || []).filter(r => {
+      const [day, , g, subj] = r;
+      if (grp !== "all" && g && g !== grp) return false;
+      const isW = /\(wyk\)/.test(subj);
+      if (typ === "wyk" && !isW) return false;
+      if (typ === "cw" && isW) return false;
+      if (rng === "week") return day >= today && day <= weekEnd;
+      if (rng === "future") return day >= today;
+      return true;
+    });
+    const list = document.getElementById("list");
+    if (!rows.length) { list.innerHTML = '<p class="empty-msg">Brak zajęć w tym zakresie.</p>'; return; }
+    let html = "", cur = null;
+    rows.forEach(([day, time, g, subj, who, room]) => {
+      if (day !== cur) {
+        cur = day;
+        const d = new Date(day + "T00:00");
+        html += `<div class="day${day === today ? " today" : ""}">${DAYS[d.getDay()]}, ${d.getDate()}.${pad(d.getMonth() + 1)}<span class="rel">${rel(day)}</span></div>`;
+      }
+      const code = subj.replace(/\s*\(.*\)/, ""), kind = (subj.match(/\((.*)\)/) || [])[1] || "";
+      const isW = kind === "wyk", info = S[code] || [code, null];
+      const [start, end] = time.split("-");
+      const past = day < today || (day === today && end <= nowHM);
+      const live = day === today && start <= nowHM && nowHM < end;
+      const name = info[1] ? `<a href="index.html#${code}">${info[0]}</a>` : info[0];
+      const online = /^Online/.test(room) ? "online" : "sala " + room;
+      html += `<div class="cls${isW ? "" : " cw"}${past ? " past" : ""}${live ? " now" : ""}">
+        <div class="t">${time}</div>
+        <div class="s">${name}<span class="tag ${isW ? "wyk" : "cw"}">${isW ? "wykład" : (kind === "ćw" ? "spotkanie" : "ćwiczenia")}</span>${g ? `<span class="tag gr">gr. ${g}u</span>` : ""}${live ? '<span class="tag cw" style="color:var(--egz);background:var(--egz-soft)">TERAZ</span>' : ""}</div>
+        <div class="m">${who.replace("Wakat_2_WS", "prowadzący jeszcze nieobsadzony")} · ${online}</div>
+      </div>`;
+    });
+    list.innerHTML = html;
+  }
+
+  document.getElementById("grp").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { grp = b.dataset.g; store.set("plan.grp", grp); render(); } });
+  document.getElementById("rng").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { rng = b.dataset.r; store.set("plan.rng", rng); render(); } });
+  document.getElementById("typ").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { typ = b.dataset.t; store.set("plan.typ", typ); render(); } });
+
+  // legenda: prowadzący per przedmiot i rodzaj
+  const who = {};
+  (window.PLAN || []).forEach(([, , , subj, w]) => { if (/^Wakat|Spotkanie|Szkolenie/.test(w)) return; (who[subj] = who[subj] || new Set()).add(w); });
+  document.getElementById("legend").innerHTML = "<ul>" + Object.keys(S).map(c => {
+    const ps = Object.keys(who).filter(k => k.replace(/\s*\(.*\)/, "") === c).map(k => `${/wyk/.test(k) ? "wykład" : "ćwiczenia"}: ${[...who[k]].join(", ")}`);
+    return `<li><b>${c}</b> = ${S[c][0]}${ps.length ? " · " + ps.join(" · ") : ""}</li>`;
+  }).join("") + "</ul>";
+
+  render();
+})();
+</script>
+</body>
+</html>

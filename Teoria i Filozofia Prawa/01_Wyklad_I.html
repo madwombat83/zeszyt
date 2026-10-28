@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TiFP – Wykład I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_zeszyt/zeszyt.css">
+<script>try{var p=JSON.parse(localStorage.getItem("zeszyt.paper"));if(p)document.documentElement.setAttribute("data-paper",p);var t=JSON.parse(localStorage.getItem("zeszyt.theme"));if(t&&t!=="auto")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<style>
+  /* dodatki tylko dla tej strony */
+  .raw p { margin: 8px 0; max-width: none; }
+  .raw b { color: var(--accent); }
+  .box.dop { border-left-color: var(--law); }
+  .box.dop::before { content: "✎ dopisek – spoza dyktanda"; display: block; font-family: system-ui, sans-serif; font-size: .72rem;
+         font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--law); margin-bottom: 4px; }
+  .lex .w.la { border-top-color: var(--egz); } .lex .w.la .g { color: var(--egz); font-style: italic; }
+  .lang-h { font-family: "Caveat", cursive; font-size: 1.7rem; margin: 26px 0 0; }
+  .quote { font-style: italic; font-size: 1.05rem; border-left: 3px solid var(--egz); padding: 2px 0 2px 16px; margin: 18px 0; max-width: 68ch; }
+  .quote .gr { font-style: normal; font-weight: 400; }
+  .quote small { display: block; font-style: normal; font-size: .8rem; color: var(--ink-soft); font-family: system-ui, sans-serif; margin-top: 4px; }
+  .sources { font-size: .88rem; color: var(--ink-soft); border-top: 1px dashed var(--line-strong); margin-top: 40px; padding-top: 6px; }
+  .sources li { max-width: none; }
+  /* mini-test */
+  .quiz { counter-reset: q; }
+  .qz { background: var(--card); border: 1px solid var(--line-strong); border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+  .qz p { margin: 0 0 8px; font-weight: 600; }
+  .qz p::before { counter-increment: q; content: counter(q) ". "; color: var(--egz); }
+  .qz button { display: block; width: 100%; text-align: left; font: inherit; font-size: .95rem; margin: 5px 0; padding: 7px 12px; border-radius: 6px;
+         border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); cursor: pointer; }
+  .qz button:hover:not(:disabled) { background: var(--accent-soft); }
+  .qz button.ok { border-color: var(--law); background: var(--law-soft); color: var(--law); font-weight: 600; }
+  .qz button.bad { border-color: var(--egz); background: var(--egz-soft); color: var(--egz); text-decoration: line-through; }
+  .qz button:disabled { cursor: default; }
+  .qz .why { display: none; font-size: .88rem; color: var(--ink-soft); margin-top: 6px; }
+  .qz.done .why { display: block; }
+  .quiz-score { font-family: system-ui, sans-serif; font-size: 14px; color: var(--ink-soft); }
+  svg .ink { fill: var(--ink); } svg .soft { fill: var(--ink-soft); } svg .acc { fill: var(--accent); } svg .egz { fill: var(--egz); }
+  svg .law { fill: var(--law); } svg .gk { fill: var(--greek); } svg .card { fill: var(--card); stroke: var(--line-strong); stroke-width: 1.5; }
+  svg .accS { stroke: var(--accent); } svg .egzS { stroke: var(--egz); } svg .lawS { stroke: var(--law); } svg .inkS { stroke: var(--ink); } svg .softS { stroke: var(--ink-soft); }
+  svg .accF { fill: var(--accent-soft); } svg .lawF { fill: var(--law-soft); } svg .egzF { fill: var(--egz-soft); } svg .gkF { fill: var(--greek-soft); }
+  svg text { font-family: system-ui, sans-serif; } svg .h { font-family: "Caveat", cursive; } svg .g { font-family: "Noto Serif", serif; }
+</style>
+</head>
+<body>
+<header class="toolbar">
+  <div class="crumbs"><a href="../index.html">Zeszyt</a> <span>/</span> Teoria i filozofia prawa <span>/</span> Wykład I</div>
+  <div class="switch" id="paper-switch"><b>Tło:</b></div>
+  <div class="switch" id="theme-switch"><b>Motyw:</b></div>
+</header>
+
+<main class="page">
+  <h1>Teoria i filozofia prawa – Wykład I</h1>
+  <p class="subtitle">Pojęcie sprawiedliwości według Arystotelesa</p>
+
+  <ul class="toc">
+    <li><a href="#notatki">Notatki (dyktando)</a></li>
+    <li><a href="#rozwiniecie">Rozwinięcie</a></li>
+    <li><a href="#slowniczek">Słowniczek</a></li>
+    <li><a href="#fiszki-sekcja">Fiszki</a></li>
+    <li><a href="#test">Mini-test</a></li>
+  </ul>
+
+  <!-- ================= NOTATKI ================= -->
+  <h2 id="notatki">Notatki z wykładu</h2>
+  <p class="muted">Tekst dyktowany na wykładzie. <b>Na teście będzie prawdopodobnie właśnie to.</b></p>
+  <div class="raw">
+    <p><b>Koncepcje sprawiedliwości:</b> od Arystotelesa, od Johna Rawlsa, od <a href="02_Wyklad_II.html">Chaima Perelmana</a>.</p>
+    <p><b>Pojęcie sprawiedliwości wg Arystotelesa.</b></p>
+    <p>Klasyczne ujęcie problemu sprawiedliwości: <i>Etyka nikomachejska</i>.</p>
+    <p>2 możliwe sposoby pojmowania sprawiedliwości:</p>
+    <ul>
+      <li>sprawiedliwość w sensie <b>dystrybutywnym</b>, tzw. sprawiedliwość <b>rozdzielcza</b>,</li>
+      <li>sprawiedliwość w sensie <b>komutatywnym</b>, tzw. <b>wyrównawcza</b>.</li>
+    </ul>
+    <p><b>Wyrównawcza:</b> polega m.in. na odpowiedniej <u>zapłacie czy odpłacie</u> za określone dobro lub zło.</p>
+    <p><b>Rozdzielcza:</b> dotyczy <u>rozdziału dóbr lub rozkładania ciężarów</u> w kręgu tych podmiotów, w stosunku do których mamy postępować sprawiedliwie.</p>
+    <p>Formalnie rzecz biorąc, sprawiedliwość wyrównawczą można by sprowadzić do szczególnej formuły sprawiedliwości rozdzielczej, czyli:<br>
+      <b>„każdemu wg dobra lub zła, które nam wyrządził”</b>.</p>
+  </div>
+
+  <div class="sticky">
+    <span class="hand">Ściąga w 3 linijkach</span>
+    <p><b>Dystrybutywna = rozdzielcza</b>: rozdział dóbr i ciężarów.</p>
+    <p><b>Komutatywna = wyrównawcza</b>: zapłata lub odpłata za dobro albo zło.</p>
+    <p>Wyrównawczą da się sprowadzić do rozdzielczej: „każdemu wg dobra lub zła, które nam wyrządził”.</p>
+  </div>
+
+  <!-- ================= ROZWINIĘCIE ================= -->
+  <h2 id="rozwiniecie">Rozwinięcie</h2>
+  <p class="muted">Ta część pomaga zrozumieć dyktando. Nie trzeba jej wkuwać.</p>
+
+  <h3>Schemat</h3>
+  <figure>
+    <svg viewBox="0 0 720 360" role="img" aria-label="Drzewo podziału sprawiedliwości według Arystotelesa">
+      <rect x="230" y="10" width="260" height="50" rx="10" class="card"/>
+      <text x="360" y="34" text-anchor="middle" class="ink" font-weight="700" font-size="16">Sprawiedliwość</text>
+      <text x="360" y="52" text-anchor="middle" class="g gk" font-size="15">δικαιοσύνη</text>
+      <path d="M360 60 V85 H180 V110 M360 85 H540 V110" fill="none" class="softS" stroke-width="2"/>
+      <rect x="40" y="110" width="280" height="150" rx="10" class="card"/>
+      <rect x="40" y="110" width="280" height="8" class="acc"/>
+      <text x="180" y="142" text-anchor="middle" class="acc" font-weight="700" font-size="16">ROZDZIELCZA</text>
+      <text x="180" y="162" text-anchor="middle" class="g gk" font-size="14">διανεμητικόν · distributiva</text>
+      <text x="60" y="190" class="ink" font-size="13.5">• podział dóbr, zaszczytów, ciężarów</text>
+      <text x="60" y="210" class="ink" font-size="13.5">• kryterium: zasługa / wkład</text>
+      <text x="60" y="230" class="ink" font-size="13.5">• proporcja GEOMETRYCZNA</text>
+      <text x="60" y="250" class="ink" font-size="13.5" font-weight="700">  A : B = C : D</text>
+      <rect x="400" y="110" width="280" height="150" rx="10" class="card"/>
+      <rect x="400" y="110" width="280" height="8" class="law"/>
+      <text x="540" y="142" text-anchor="middle" class="law" font-weight="700" font-size="16">WYRÓWNAWCZA</text>
+      <text x="540" y="162" text-anchor="middle" class="g gk" font-size="14">διορθωτικόν · commutativa</text>
+      <text x="420" y="190" class="ink" font-size="13.5">• wymiana, szkoda, odpłata</text>
+      <text x="420" y="210" class="ink" font-size="13.5">• kryterium: ekwiwalentność</text>
+      <text x="420" y="230" class="ink" font-size="13.5">• proporcja ARYTMETYCZNA</text>
+      <text x="420" y="250" class="ink" font-size="13.5" font-weight="700">  A = B</text>
+      <path d="M180 260 V285 H540 V260 M360 285 V300" fill="none" class="softS" stroke-width="2" stroke-dasharray="4 4"/>
+      <rect x="230" y="300" width="260" height="50" rx="10" class="egzF" stroke="none"/>
+      <text x="360" y="322" text-anchor="middle" class="egz" font-weight="700" font-size="15">korektywa: SŁUSZNOŚĆ</text>
+      <text x="360" y="341" text-anchor="middle" class="g egz" font-size="14">ἐπιείκεια · aequitas</text>
+    </svg>
+    <figcaption>Słuszność nie jest trzecim rodzajem sprawiedliwości. Poprawia oba rodzaje, gdy ogólna reguła nie pasuje do konkretnej sprawy.</figcaption>
+  </figure>
+
+  <h3>Jak działają obie sprawiedliwości</h3>
+  <div class="compare">
+    <div><h4>Rozdzielcza</h4>
+      <p>Dzieli dobra (zaszczyty, pieniądze) i ciężary (podatki, obowiązki) między członków wspólnoty.</p>
+      <p>Kryterium to <b>zasługa</b>. Równym przysługuje po równo, nierównym nierówno, ale proporcjonalnie.</p>
+      <p class="muted">Przykład: stypendium naukowe zależy od średniej.</p></div>
+    <div><h4>Wyrównawcza</h4>
+      <p>Dotyczy wymiany (umowy) i krzywd (szkody, przestępstwa). Przywraca równowagę.</p>
+      <p>Kryterium to <b>równowartość</b>. Kim są strony, nie ma znaczenia.</p>
+      <p class="muted">Przykład: zbiłeś szybę, płacisz jej wartość, niezależnie od tego, czy jesteś milionerem.</p></div>
+  </div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="Porównanie proporcji geometrycznej i arytmetycznej">
+      <text x="170" y="24" text-anchor="middle" class="acc" font-weight="700" font-size="15">Geometryczna (rozdzielcza)</text>
+      <text x="40" y="62" class="ink" font-size="13">zasługa A</text>
+      <g class="acc"><rect x="120" y="48" width="22" height="22"/><rect x="146" y="48" width="22" height="22"/></g>
+      <text x="40" y="96" class="ink" font-size="13">zasługa B</text>
+      <g class="acc"><rect x="120" y="82" width="22" height="22"/></g>
+      <text x="40" y="150" class="ink" font-size="13">dobra dla A</text>
+      <g class="law"><rect x="120" y="136" width="22" height="22"/><rect x="146" y="136" width="22" height="22"/><rect x="172" y="136" width="22" height="22"/><rect x="198" y="136" width="22" height="22"/></g>
+      <text x="40" y="184" class="ink" font-size="13">dobra dla B</text>
+      <g class="law"><rect x="120" y="170" width="22" height="22"/><rect x="146" y="170" width="22" height="22"/></g>
+      <text x="170" y="230" text-anchor="middle" class="ink" font-weight="700" font-size="16">2 : 1 = 4 : 2</text>
+      <text x="170" y="256" text-anchor="middle" class="h egz" font-size="22">nierównym nierówno, ale proporcjonalnie</text>
+      <line x1="360" y1="20" x2="360" y2="280" class="softS" stroke-dasharray="4 5"/>
+      <text x="545" y="24" text-anchor="middle" class="law" font-weight="700" font-size="15">Arytmetyczna (wyrównawcza)</text>
+      <text x="395" y="60" class="soft" font-size="12">przed</text><text x="395" y="120" class="soft" font-size="12">szkoda</text><text x="395" y="180" class="soft" font-size="12">wyrok</text>
+      <g class="acc">
+        <rect x="450" y="45" width="100" height="20"/><rect x="580" y="45" width="100" height="20"/>
+        <rect x="450" y="105" width="140" height="20"/><rect x="620" y="105" width="60" height="20"/>
+        <rect x="450" y="165" width="100" height="20"/><rect x="580" y="165" width="100" height="20"/>
+      </g>
+      <text x="500" y="82" text-anchor="middle" class="soft" font-size="12">X = 5</text><text x="630" y="82" text-anchor="middle" class="soft" font-size="12">Y = 5</text>
+      <text x="520" y="142" text-anchor="middle" class="egz" font-size="12">X = 7 (zabrał 2)</text><text x="650" y="142" text-anchor="middle" class="egz" font-size="12">Y = 3</text>
+      <text x="500" y="202" text-anchor="middle" class="law" font-size="12">X = 5</text><text x="630" y="202" text-anchor="middle" class="law" font-size="12">Y = 5</text>
+      <text x="545" y="230" text-anchor="middle" class="ink" font-weight="700" font-size="16">sędzia odbiera 2 i oddaje 2</text>
+      <text x="545" y="256" text-anchor="middle" class="h egz" font-size="22">liczy się tylko szkoda, nie kto jest kim</text>
+    </svg>
+    <figcaption>Lewa strona: kto ma większą zasługę, dostaje proporcjonalnie więcej. Prawa strona: zysk i stratę wyrównuje się do równego stanu.</figcaption>
+  </figure>
+
+  <h3>Dlaczego wyrównawczą da się „sprowadzić” do rozdzielczej?</h3>
+  <p>Rozdzielcza mówi: <i>każdemu według X</i>, gdzie X to zasługa, potrzeba albo wkład. Wystarczy za X podstawić <b>„dobro lub zło, które nam wyrządził”</b>. Wtedy zapłata albo kara jest po prostu „przydziałem” odpowiednim do czynu. To dlatego w dyktandzie pada słowo „formalnie”: od strony formy logicznej to szczególny przypadek tej samej formuły.</p>
+
+  <div class="box dop">
+    <p><b>Słuszność (<span class="gr">ἐπιείκεια</span>, epieikeia)</b> to trzeci element u Arystotelesa, zwykle omawiany razem z tym podziałem. Prawo jest ogólne, więc w nietypowej sprawie sztywne stosowanie przepisu bywa niesprawiedliwe. Słuszność to korekta: sędzia „nagina” regułę do konkretnego przypadku. Arystoteles porównuje ją do <b>ołowianej miary budowniczych z Lesbos</b>, która ugina się i dopasowuje do kształtu kamienia.</p>
+  </div>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="Sztywna linijka kontra ołowiana miara na nierównym kamieniu">
+      <path d="M40 250 L40 150 C 90 120, 120 175, 170 140 S 260 95, 300 135 S 360 175, 400 150 L400 250 Z" class="gkF" stroke="none"/>
+      <path d="M40 150 C 90 120, 120 175, 170 140 S 260 95, 300 135 S 360 175, 400 150" fill="none" class="softS" stroke-width="2"/>
+      <rect x="30" y="102" width="380" height="14" rx="2" class="egz" opacity=".85"/>
+      <g class="egzS" stroke-width="1.5" stroke-dasharray="3 3"><line x1="140" y1="116" x2="140" y2="150"/><line x1="340" y1="116" x2="340" y2="158"/><line x1="70" y1="116" x2="70" y2="140"/></g>
+      <text x="220" y="80" text-anchor="middle" class="egz" font-weight="700" font-size="14">sztywna reguła = ogólny przepis</text>
+      <text x="220" y="272" text-anchor="middle" class="h egz" font-size="22">nie przylega, zostają szczeliny</text>
+
+      <path d="M440 250 L440 150 C 490 120, 520 175, 570 140 S 660 95, 700 135 L700 250 Z" class="gkF" stroke="none"/>
+      <path d="M440 150 C 490 120, 520 175, 570 140 S 660 95, 700 135" fill="none" class="softS" stroke-width="2"/>
+      <path d="M440 143 C 490 113, 520 168, 570 133 S 660 88, 700 128" fill="none" class="lawS" stroke-width="10" stroke-linecap="round"/>
+      <text x="570" y="70" text-anchor="middle" class="law" font-weight="700" font-size="14">ołowiana miara = słuszność</text>
+      <text x="570" y="272" text-anchor="middle" class="h law" font-size="22">ugina się i przylega do kamienia</text>
+      <text x="40" y="30" class="g gk" font-size="15">ὁ μολίβδινος κανών</text>
+      <text x="40" y="50" class="soft" font-size="12">„ołowiana miara” budowniczych z Lesbos</text>
+    </svg>
+    <figcaption>Kamień to konkretna sprawa. Miara to norma. Ołów nie przestaje mierzyć, tylko dopasowuje się do kształtu.</figcaption>
+  </figure>
+
+  <div class="box dop">
+    <p><b>Gdzie to widać dziś?</b> Rozdzielcza przypomina <b>prawo publiczne</b> (podatki, świadczenia), a wyrównawcza <b>prawo prywatne</b> (umowy, odszkodowania). To jednak uproszczenie, bo u Arystotelesa przestępstwa też należą do wyrównawczej. Słuszność żyje dziś w klauzulach generalnych, np. <i>zasady współżycia społecznego</i> w art. 5 k.c.</p>
+  </div>
+
+  <!-- ================= SŁOWNICZEK ================= -->
+  <h2 id="slowniczek">Słowniczek</h2>
+  <p class="lang-h" style="color:var(--egz)">Łacina, czyli skąd te nazwy</p>
+  <div class="eq"><span class="part">dis- (roz-)</span> + <span class="part">tribuere (przydzielać)</span> = <span class="res law">distributiva: rozdzielcza</span></div>
+  <div class="eq"><span class="part">com- (wspólnie)</span> + <span class="part">mutare (zmieniać)</span> = <span class="res law">commutativa: wymienna, wyrównawcza</span></div>
+  <div class="lex">
+    <div class="w la"><div class="g">iustitia distributiva</div><div class="t">jus-TI-cja dis-try-bu-TI-wa</div><div class="m">sprawiedliwość rozdzielcza</div><div class="d">Stąd „dystrybucja” i „dystrybutor”.</div></div>
+    <div class="w la"><div class="g">iustitia commutativa</div><div class="t">jus-TI-cja kom-mu-ta-TI-wa</div><div class="m">sprawiedliwość wyrównawcza</div><div class="d">Od wymiany (<i>commutatio</i>). Nazwę spopularyzował Tomasz z Akwinu.</div></div>
+    <div class="w la"><div class="g">ius / lex</div><div class="t">jus / leks</div><div class="m">prawo / ustawa</div><div class="d"><i>ius</i> to prawo jako całość, <i>lex</i> to konkretna ustawa.</div></div>
+    <div class="w la"><div class="g">suum cuique</div><div class="t">SU-um KUJ-kwe</div><div class="m">każdemu, co mu się należy</div><div class="d">Rzymska (Ulpian) definicja sprawiedliwości. Pasuje do rozdzielczej.</div></div>
+    <div class="w la"><div class="g">aequitas</div><div class="t">E-kwi-tas</div><div class="m">słuszność</div><div class="d">Łaciński odpowiednik epieikei. Angielskie <i>equity</i>.</div></div>
+    <div class="w la"><div class="g">summum ius, summa iniuria</div><div class="t">Cyceron</div><div class="m">najwyższe prawo, najwyższym bezprawiem</div><div class="d">Sztywne prawo bez słuszności krzywdzi.</div></div>
+  </div>
+
+  <p class="lang-h" style="color:var(--greek)">Greka, czyli jak to nazywał Arystoteles</p>
+  <div class="lex">
+    <div class="w"><div class="g">δικαιοσύνη</div><div class="t">dikaiosýnē · di-kaj-o-SY-ne</div><div class="m">sprawiedliwość</div><div class="d">Od <span class="gr">δίκη</span>: sąd, kara, porządek.</div></div>
+    <div class="w"><div class="g">Ἠθικὰ Νικομάχεια</div><div class="t">Ēthiká Nikomácheia</div><div class="m">Etyka nikomachejska</div><div class="d"><span class="gr">ἦθος</span> to obyczaj, charakter, stąd „etyka”. Nikomach był synem Arystotelesa.</div></div>
+    <div class="w"><div class="g">διανεμητικόν</div><div class="t">dianemētikón</div><div class="m">rozdzielcza</div><div class="d"><span class="gr">διά</span> (roz-) + <span class="gr">νέμω</span> (dzielić).</div></div>
+    <div class="w"><div class="g">διορθωτικόν</div><div class="t">diorthōtikón</div><div class="m">wyrównawcza, „prostująca”</div><div class="d"><span class="gr">ὀρθός</span> to prosty, stąd „ortografia” i „ortopeda”. Prostuje krzywdę.</div></div>
+    <div class="w"><div class="g">ἐπιείκεια</div><div class="t">epiéikeia · e-pi-EJ-kej-a</div><div class="m">słuszność</div><div class="d">Korekta sztywnego prawa w konkretnej sprawie.</div></div>
+    <div class="w"><div class="g">κανών</div><div class="t">kanṓn</div><div class="m">miara, reguła</div><div class="d">„Ołowiana miara z Lesbos” to <span class="gr">μολίβδινος κανών</span>. Stąd słowo „kanon”.</div></div>
+  </div>
+
+  <!-- ================= FISZKI ================= -->
+  <h2 id="fiszki-sekcja">Fiszki</h2>
+  <p class="muted">Kliknij kartę albo naciśnij spację, żeby ją odwrócić. Strzałki ← → przełączają karty.</p>
+  <div id="fiszki"></div>
+
+  <!-- ================= TEST ================= -->
+  <h2 id="test">Mini-test</h2>
+  <p class="quiz-score" id="quiz-score">Kliknij odpowiedź. Pytania są ułożone pod dyktando.</p>
+  <div class="quiz" id="quiz"></div>
+  <button type="button" class="btn" id="quiz-reset" style="font-family:system-ui,sans-serif;font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);cursor:pointer">↺ Od nowa</button>
+
+  <!-- ================= ŹRÓDŁA ================= -->
+  <details class="sources">
+    <summary>Lektury podane na wykładzie (dla porządku)</summary>
+    <ul>
+      <li>R. A. Tokarczyk, <i>Podstawy prawoznawstwa, teorii i filozofii prawa. Reinterpretacja krytyczna</i>, Humanitas 2017.</li>
+      <li>R. A. Tokarczyk, <i>Filozofia prawa w perspektywie prawa natury</i>, Temida 2, 1998.</li>
+      <li>G. Radbruch, <i>Filozofia prawa</i>, PWN 2009.</li>
+      <li>J. Oniszczuk, <i>Filozofia i teoria prawa</i>, C.H. Beck 2012.</li>
+    </ul>
+  </details>
+
+  <footer>Zeszyt · Rok 1, semestr 1 · Teoria i filozofia prawa · Wykład I</footer>
+</main>
+
+<script>
+window.FISZKI = [
+  { tag: "dyktando", q: "Gdzie znajduje się klasyczne ujęcie problemu sprawiedliwości u Arystotelesa?", a: "<i>Etyka nikomachejska</i>" },
+  { tag: "dyktando", q: "Dwa sposoby pojmowania sprawiedliwości według Arystotelesa", a: "1) w sensie <b>dystrybutywnym</b>, czyli <b>rozdzielcza</b><br>2) w sensie <b>komutatywnym</b>, czyli <b>wyrównawcza</b>" },
+  { tag: "dyktando", q: "Sprawiedliwość <b>dystrybutywna</b> to inaczej…", a: "<span class='hand' style='font-size:1.8rem;color:var(--egz)'>rozdzielcza</span>" },
+  { tag: "dyktando", q: "Sprawiedliwość <b>komutatywna</b> to inaczej…", a: "<span class='hand' style='font-size:1.8rem;color:var(--egz)'>wyrównawcza</span>" },
+  { tag: "dyktando", q: "Na czym polega sprawiedliwość wyrównawcza?", a: "M.in. na odpowiedniej <b>zapłacie czy odpłacie</b> za określone dobro lub zło." },
+  { tag: "dyktando", q: "Czego dotyczy sprawiedliwość rozdzielcza?", a: "<b>Rozdziału dóbr lub rozkładania ciężarów</b> w kręgu tych podmiotów, w stosunku do których mamy postępować sprawiedliwie." },
+  { tag: "dyktando", q: "Do czego formalnie można sprowadzić sprawiedliwość wyrównawczą?", a: "Do szczególnej formuły sprawiedliwości <b>rozdzielczej</b>:<br><i>„każdemu wg dobra lub zła, które nam wyrządził”</i>" },
+  { tag: "dyktando", q: "Dokończ: „każdemu wg dobra lub zła…”", a: "„…które nam wyrządził”<br><small>Formuła, w której wyrównawcza staje się szczególnym przypadkiem rozdzielczej.</small>" },
+  { tag: "rozwinięcie", q: "Kryterium sprawiedliwości rozdzielczej", a: "Zasługa / wkład. Proporcja <b>geometryczna</b>: A : B = C : D." },
+  { tag: "rozwinięcie", q: "Kryterium sprawiedliwości wyrównawczej", a: "Równowartość świadczeń lub szkody. Proporcja <b>arytmetyczna</b>: A = B." },
+  { tag: "rozwinięcie", q: "Co to jest <span class='gr'>ἐπιείκεια</span> (epieikeia)?", a: "Słuszność, czyli korekta sztywnego prawa w konkretnym przypadku. Symbol: ołowiana miara z Lesbos." },
+  { tag: "słówka", q: "<i>iustitia distributiva</i>", a: "sprawiedliwość rozdzielcza<br><small>dis- + tribuere = roz-dzielać</small>" },
+  { tag: "słówka", q: "<i>iustitia commutativa</i>", a: "sprawiedliwość wyrównawcza<br><small>com- + mutare = wymieniać</small>" },
+  { tag: "słówka", q: "<span class='gr' style='font-size:2rem'>δικαιοσύνη</span>", a: "<span class='hand' style='font-size:1.6rem;color:var(--egz)'>dikaiosýnē</span>sprawiedliwość" },
+  { tag: "słówka", q: "<i>suum cuique</i>", a: "każdemu, co mu się należy" }
+];
+
+/* ----- mini-test ----- */
+(function () {
+  const Q = [
+    { q: "W którym dziele Arystoteles daje klasyczne ujęcie sprawiedliwości?", o: ["Polityka", "Etyka nikomachejska", "Państwo", "Metafizyka"], c: 1, w: "Dyktando: „klasyczne ujęcie… Etyka nikomachejska”. <i>Państwo</i> napisał Platon." },
+    { q: "Sprawiedliwość w sensie dystrybutywnym to inaczej sprawiedliwość:", o: ["wyrównawcza", "rozdzielcza", "naprawcza", "komutatywna"], c: 1, w: "Dystrybutywna = rozdzielcza (łac. <i>distribuere</i>, rozdzielać)." },
+    { q: "Sprawiedliwość w sensie komutatywnym to inaczej sprawiedliwość:", o: ["rozdzielcza", "proporcjonalna", "wyrównawcza", "dystrybutywna"], c: 2, w: "Komutatywna = wyrównawcza (łac. <i>commutare</i>, wymieniać)." },
+    { q: "Odpowiednia zapłata czy odpłata za określone dobro lub zło to istota sprawiedliwości:", o: ["rozdzielczej", "wyrównawczej", "słusznościowej", "proceduralnej"], c: 1, w: "Dyktando: wyrównawcza polega m.in. na zapłacie czy odpłacie za dobro lub zło." },
+    { q: "Rozdział dóbr lub rozkładanie ciężarów w kręgu podmiotów, wobec których mamy postępować sprawiedliwie, dotyczy sprawiedliwości:", o: ["wyrównawczej", "komutatywnej", "rozdzielczej", "naturalnej"], c: 2, w: "To niemal dosłowna definicja rozdzielczej z dyktanda." },
+    { q: "Formalnie sprawiedliwość wyrównawczą można sprowadzić do:", o: ["szczególnej formuły sprawiedliwości rozdzielczej", "prawa natury", "sprawiedliwości proceduralnej", "nie da się jej sprowadzić"], c: 0, w: "Wyrównawcza to szczególny przypadek rozdzielczej." },
+    { q: "Formuła, w której wyrównawcza staje się szczególnym przypadkiem rozdzielczej, brzmi:", o: ["każdemu według potrzeb", "każdemu według zasług", "każdemu wg dobra lub zła, które nam wyrządził", "każdemu to samo"], c: 2, w: "Dosłownie z dyktanda. Pozostałe odpowiedzi to inne, znane formuły sprawiedliwości." },
+    { q: "Ile sposobów pojmowania sprawiedliwości wskazuje Arystoteles (według dyktanda)?", o: ["1", "2", "3", "4"], c: 1, w: "Dwa: dystrybutywny (rozdzielczy) i komutatywny (wyrównawczy)." }
+  ];
+  const root = document.getElementById("quiz"), score = document.getElementById("quiz-score");
+  let good = 0, done = 0;
+  function render() {
+    good = done = 0; root.innerHTML = "";
+    Q.forEach(item => {
+      const d = document.createElement("div"); d.className = "qz";
+      d.innerHTML = `<p>${item.q}</p>` + item.o.map((o, i) => `<button type="button" data-i="${i}">${"ABCD"[i]}) ${o}</button>`).join("") + `<div class="why">${item.w}</div>`;
+      d.addEventListener("click", e => {
+        const b = e.target.closest("button"); if (!b || d.classList.contains("done")) return;
+        const i = +b.dataset.i; d.classList.add("done"); done++;
+        d.querySelectorAll("button").forEach(x => { x.disabled = true; if (+x.dataset.i === item.c) x.classList.add("ok"); });
+        if (i === item.c) good++; else b.classList.add("bad");
+        score.textContent = `Wynik: ${good} / ${done}` + (done === Q.length ? (good === Q.length ? " – komplet! 🎉" : ` (z ${Q.length})`) : "");
+      });
+      root.appendChild(d);
+    });
+    score.textContent = "Kliknij odpowiedź. Pytania są ułożone pod dyktando.";
+  }
+  document.getElementById("quiz-reset").addEventListener("click", render);
+  render();
+})();
+</script>
+<script src="../_zeszyt/zeszyt.js"></script>
+</body>
+</html>

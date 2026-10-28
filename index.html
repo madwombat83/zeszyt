@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeszyt – Semestr 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_zeszyt/zeszyt.css">
+<script src="_zeszyt/zeszyt.js"></script>
+<script src="_zeszyt/plan_data.js"></script>
+<style>
+  .next { background: var(--card); border: 1px solid var(--line-strong); border-left: 4px solid var(--egz); border-radius: 8px; padding: 10px 16px; margin: 0 0 8px; font-family: system-ui, sans-serif; font-size: 14px; }
+  .next b.h { display: block; margin-bottom: 4px; }
+  .next .r { margin: 3px 0; }
+  .next .r span { color: var(--ink-soft); }
+  .missing td:first-child { white-space: nowrap; }
+</style>
+</head>
+<body>
+<header class="toolbar">
+  <nav class="crumbs">📓 Semestr 1 · <a href="plan.html">🗓️ Plan zajęć</a></nav>
+  <div class="switch" id="paper-switch"><b>Tło:</b></div>
+  <div class="switch" id="theme-switch"><b>Motyw:</b></div>
+</header>
+
+<main class="page">
+  <h1>Prawo – Rok 1, Semestr 1</h1>
+  <p class="subtitle">Mój AI zeszyt · <span class="egz">EGZ</span> = będzie na egzaminie · każdy wykład ma notatki, ściągę, fiszki i mini-test</p>
+
+  <div class="next" id="next"><b class="h">Najbliższe zajęcia</b><div id="next-list">…</div><div class="r"><a href="plan.html">Cały plan →</a></div></div>
+
+  <h2>Przedmioty z notatkami</h2>
+  <div class="subjects">
+    <div class="subject" id="Pr">
+      <h3>Prawo rzymskie</h3>
+      <div class="meta">Pr · dr Eugeniusz Szydłowski</div>
+      <ul>
+        <li><a href="Prawo%20Rzymskie/01_Wyklad_I.html">Wykład I – ramy czasowe, ius publicum i privatum</a></li>
+        <li><a href="Prawo%20Rzymskie/02_Wyklad_II.html">Wykład II (15.10) – podziały prawa, okresy państwa</a></li>
+        <li><a href="Prawo%20Rzymskie/03_Wyklad_III.html">Wykład III (28.10) – Ustawa XII tablic</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Tifp">
+      <h3>Teoria i filozofia prawa</h3>
+      <div class="meta">TiFP · dr Eugeniusz Szydłowski</div>
+      <ul>
+        <li><a href="Teoria%20i%20Filozofia%20Prawa/01_Wyklad_I.html">Wykład I (1.10) – Arystoteles</a></li>
+        <li><a href="Teoria%20i%20Filozofia%20Prawa/02_Wyklad_II.html">Wykład II (8.10) – Perelman i Rawls</a></li>
+        <li><a href="Teoria%20i%20Filozofia%20Prawa/03_Wyklad_III.html">Wykład III (15.10) – metodologia, stosowanie prawa</a></li>
+        <li><a href="Teoria%20i%20Filozofia%20Prawa/04_Wyklad_IV.html">Wykład IV (22.10) – racjonalny dyskurs praktyczny</a></li>
+        <li><a href="Teoria%20i%20Filozofia%20Prawa/05_Wyklad_V.html">Wykład V (28.10) – podział wykładni prawa</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Hdpip">
+      <h3>Historia doktryn polit. i prawnych</h3>
+      <div class="meta">HDPiP · dr Eugeniusz Szydłowski</div>
+      <ul>
+        <li><a href="Historia%20Doktryn%20Politycznych%20i%20Prawnych/01_Wyklad_I.html">Wykład I (8.10) – Konfucjusz</a></li>
+        <li><a href="Historia%20Doktryn%20Politycznych%20i%20Prawnych/02_Wyklad_II.html">Wykład II (15.10) – sofiści, demokracja ateńska</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Filoz">
+      <h3>Filozofia</h3>
+      <div class="meta">Filoz · dr Kamila Morawska · zaliczenie: test ok. 50 pytań</div>
+      <ul>
+        <li><a href="Filozofia/01_Wyklad_I.html">Wykład I (5.10) – początki, działy, Kant, Jaspers</a></li>
+        <li><a href="Filozofia/02_Wyklad_II.html">Wykład II (22.10) – filozofia polityki: Platon, Arystoteles</a></li>
+        <li><a href="Filozofia/03_Wyklad_III.html">Wykład III (22.10) – średniowiecze: Augustyn, Tomasz</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Owi">
+      <h3>Ochrona własności intelektualnej</h3>
+      <div class="meta">OWI · wykład: dr Jakub Rzucidło · ćw.: mgr Joanna Rewak</div>
+      <ul>
+        <li><a href="Ochrona%20Wlasnosci%20Intelektualnej/01_Wyklad_I.html">Wykład I (13.10) – utwór, twórca (art. 8), kazus „Temida z popcornem”</a></li>
+        <li><a href="Ochrona%20Wlasnosci%20Intelektualnej/02_Wyklad_II.html">Wykład II – utwory pracownicze, kazus „Studio Kreska”</a></li>
+        <li><a href="Ochrona%20Wlasnosci%20Intelektualnej/03_Wyklad_III.html">Wykład III (20.10) – art. 16, 52, 53, kazus „CyberQ”</a></li>
+        <li><a href="Ochrona%20Wlasnosci%20Intelektualnej/04_Kazus_Ani-ani.html">Kazus „Ani-ani” – plagiat utworu naukowego</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Pk">
+      <h3>Prawo konstytucyjne</h3>
+      <div class="meta">Pk · wykład: dr Przemysław Charzewski · ćw.: mgr Aldona Sondej</div>
+      <ul>
+        <li><a href="Prawo%20Konstytucyjne/01_Wyklad_I.html">Wykład I – pojęcie, cechy i obowiązywanie Konstytucji</a></li>
+        <li><a href="Prawo%20Konstytucyjne/02_Wyklad_II.html">Wykład II (21.10) – dobro wspólne, obowiązki, państwo prawne</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Ps">
+      <h3>Podstawy socjologii</h3>
+      <div class="meta">Ps · dr Ewa Groszewska</div>
+      <ul>
+        <li><a href="Podstawy%20Socjologii/02_Wyklad_II.html">Wykład II (21.10) – kultura, wartości, normy</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Aiwp">
+      <h3>Autoprezentacja i wystąpienia</h3>
+      <div class="meta">Aiwp · dr Dawid Kutryn</div>
+      <ul>
+        <li><a href="Autoprezentacja%20i%20Wystapienia%20Publiczne/02_Wyklad_II.html">Wykład II (23.10) – metodyka wystąpień, mój wstęp „Kunice”</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="Pjłdp">
+      <h3>Łacina dla prawników</h3>
+      <div class="meta">Pjłdp · dr Paweł Kobes (ćw.)</div>
+      <ul>
+        <li><a href="Jezyk%20Lacinski%20dla%20Prawnikow/01_Cwiczenia_I.html">Ćwiczenia 1 (10–11.10) – słownik prawniczy, kolizje, reguły kolizyjne</a></li>
+      </ul>
+    </div>
+    <div class="subject" id="So">
+      <h3>Sprawy organizacyjne</h3>
+      <div class="meta">So, S-Wswpk · 3.10</div>
+      <ul>
+        <li><a href="Sprawy%20Organizacyjne/biblioteka.html">Biblioteka: zasady (quiz)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Jeszcze bez notatek</h2>
+  <div class="subjects">
+    <div class="subject empty" id="Prawo"><h3>Prawoznawstwo</h3><div class="meta">Prawo · dr Izabela Bernatek-Zaguła</div></div>
+    <div class="subject empty" id="Epp"><h3>Etyka profesjonalizmu prawnika</h3><div class="meta">Epp · dr Przemysław Charzewski</div></div>
+    <div class="subject empty" id="Lp"><h3>Logika prawnicza</h3><div class="meta">Lp · tylko ćwiczenia, prowadzący nieobsadzony</div></div>
+    <div class="subject empty" id="Tiisi"><h3>Technologie inf. i SI</h3><div class="meta">Tiisi · mgr inż. Roman Hojniak (ćw., online)</div></div>
+  </div>
+  <p class="muted">Nowe notatki: wklej tekst albo zdjęcia i napisz, z jakiego przedmiotu.</p>
+
+  <h2>Brakujące notatki</h2>
+  <p class="muted">Zajęcia, które według planu już się odbyły, a nie ma ich w zeszycie. Najszybciej zdobyć je od kogoś z grupy.</p>
+  <div class="table-wrap"><table class="missing">
+    <tr><th>Data</th><th>Zajęcia</th></tr>
+    <tr><td>1.10 lub 8.10</td><td><b>Prawo rzymskie</b>: w planie są wykłady 1.10, 8.10 i 15.10, a w zeszycie dwa. Wykład I pewnie jest z 8.10, więc brakuje 1.10?</td></tr>
+    <tr><td>2.10</td><td><b>Prawoznawstwo</b> (wykład) i <b>HDPiP</b> (wykład przed Konfucjuszem)</td></tr>
+    <tr><td>5.10</td><td><b>Podstawy socjologii</b> (Wykład 1); <b>Prawo konstytucyjne</b>: Wykład I (slajdy) to pewnie 5.10</td></tr>
+    <tr><td>9.10</td><td><b>Autoprezentacja</b>, <b>OWI</b> (pierwszy wykład) i <b>Etyka profesjonalizmu prawnika</b> (wykłady)</td></tr>
+    <tr><td>7.10 / 14.10</td><td><b>Technologie inf. i SI</b> (ćwiczenia online: gr. 1u 7.10, gr. 2u 14.10)</td></tr>
+    <tr><td>10–11.10</td><td><b>Łacina</b> (brakuje stron 1 i 5), <b>Autoprezentacja</b> i <b>OWI</b> (ćwiczenia weekendowe)</td></tr>
+      </table></div>
+
+  <h2>Na egzamin <span class="egz">EGZ</span></h2>
+  <ul>
+    <li><b>Filozofia:</b> <a href="Filozofia/01_Wyklad_I.html#kant">Kant – 4 pytania filozofii</a> (Wykład I)</li>
+    <li><b>TiFP:</b> <a href="Teoria%20i%20Filozofia%20Prawa/04_Wyklad_IV.html#dyskurs">Dyskurs: charakter teoretyczny i praktyczny, cel = uzasadnienie norm</a> (Wykład IV)</li>
+    <li><b>Filozofia:</b> <a href="Filozofia/02_Wyklad_II.html#czym">Definicje: filozofia polityki i polityka (za Szahajem)</a> (Wykład II)</li>
+    <li><b>OWI:</b> <a href="Ochrona%20Wlasnosci%20Intelektualnej/01_Wyklad_I.html#art1">Art. 1 pr. aut. – definicja utworu, ust. 1–4</a> (Wykład I)</li>
+    <li><b>OWI:</b> <a href="Ochrona%20Wlasnosci%20Intelektualnej/01_Wyklad_I.html#art8">Domniemanie prawne vs faktyczne (art. 8 ust. 2)</a> (Wykład I)</li>
+  </ul>
+
+  <h2>Do wyjaśnienia</h2>
+  <p class="muted">Do zadania na zajęciach albo na konsultacjach. Szczegóły w README każdego przedmiotu.</p>
+  <ul>
+    <li><b>Prawo rzymskie, Wykład I:</b> brakuje punktu 2 z listy „PR, przedmiot”.</li>
+    <li><b>Prawo rzymskie, Wykład II:</b> czyja definicja ius naturae: Ulpiana czy Paulusa?</li>
+    <li><b>TiFP:</b> czy wymagane są konkretne paragrafy Radbrucha? Która lektura jest podstawowa na egzamin?</li>
+    <li><b>HDPiP, Wykład I:</b> które to „3 pojęcia do wyjaśnienia” (w notatce są 4)?</li>
+    <li><b>Filozofia, Wykład I:</b> w jakim kontekście padło nazwisko Baumana? (Adorno: filozof jak dziecko zadające pytania)</li>
+    <li><b>Prawo konstytucyjne, Wykład I:</b> „Grzegorz z Tours, De Republica, 1578” na slajdzie się nie zgadza (VI w.). Chodziło o Bodina?</li>
+  </ul>
+
+  <h2>Konspekty i sylabusy</h2>
+  <p class="muted">Jeszcze żadnych. Gdy je dostaniesz, wpiszę do README każdego przedmiotu formę zaliczenia i lektury.</p>
+</main>
+
+<script>
+(function () {
+  const N = { "Pr": "Prawo rzymskie", "Tifp": "Teoria i filozofia prawa", "Prawo": "Prawoznawstwo", "Hdpip": "HDPiP", "Ps": "Podstawy socjologii", "Pk": "Prawo konstytucyjne", "Filoz": "Filozofia", "Tiisi": "Technologie inf. i SI", "Aiwp": "Autoprezentacja", "Owi": "OWI", "Epp": "Etyka prawnika", "Pjłdp": "Łacina", "Lp": "Logika prawnicza", "So": "Spotkanie org.", "S-Wswpk": "Szkolenie" };
+  const D = ["nd", "pn", "wt", "śr", "czw", "pt", "sob"];
+  let grp = "1"; try { grp = localStorage.getItem("plan.grp") || "1"; } catch (e) {}
+  const pad = n => String(n).padStart(2, "0"), now = new Date();
+  const today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()), hm = pad(now.getHours()) + ":" + pad(now.getMinutes());
+  const next = (window.PLAN || []).filter(([d, t, g]) => (d > today || (d === today && t.split("-")[1] > hm)) && (grp === "all" || !g || g === grp)).slice(0, 4);
+  const el = document.getElementById("next-list");
+  if (!next.length) { el.textContent = "Brak zaplanowanych zajęć."; return; }
+  el.innerHTML = next.map(([d, t, g, s, w, r]) => {
+    const dt = new Date(d + "T00:00"), code = s.replace(/\s*\(.*\)/, ""), wyk = /wyk/.test(s);
+    return `<div class="r"><b>${D[dt.getDay()]} ${dt.getDate()}.${pad(dt.getMonth() + 1)}, ${t}</b> · ${N[code] || code} <span>(${wyk ? "wykład" : "ćw."}${g ? ", gr. " + g + "u" : ""}, ${/^Online/.test(r) ? "online" : "sala " + r})</span></div>`;
+  }).join("") + (grp === "all" ? '<div class="r"><span>Pokazuję obie grupy. W planie możesz wrócić do gr. 1u.</span></div>' : "");
+})();
+</script>
+</body>
+</html>
