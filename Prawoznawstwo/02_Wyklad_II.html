@@ -3,11 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prawoznawstwo – Wykład II: norma prawna</title>
+<title>Prawoznawstwo – Wykład II: tworzenie i system prawa w Polsce</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../_zeszyt/zeszyt.css">
 <script>try{var p=JSON.parse(localStorage.getItem("zeszyt.paper"));if(p)document.documentElement.setAttribute("data-paper",p);var t=JSON.parse(localStorage.getItem("zeszyt.theme"));if(t&&t!=="auto")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<style>
+  .pyramid { margin: 14px 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .pyramid div { background: var(--card); border: 1px solid var(--line-strong); border-radius: 6px; padding: 6px 12px; text-align: center; font-size: .95rem; }
+  .pyramid .l1 { width: 40%; border-left: 4px solid var(--egz); }
+  .pyramid .l2 { width: 55%; }
+  .pyramid .l3 { width: 70%; }
+  .pyramid .l4 { width: 85%; }
+  .pyramid .l5 { width: 100%; border-style: dashed; }
+  @media (max-width: 600px) { .pyramid div { width: 100% !important; } }
+</style>
 </head>
 <body>
 <header class="toolbar">
@@ -18,47 +28,79 @@
 
 <main class="page">
   <h1>Prawoznawstwo – Wykład II</h1>
-  <p class="subtitle">Norma prawna · dr Izabela Bernatek-Zaguła · 29.10.2026 · ze slajdów · <b>w trakcie, dopisuję na bieżąco</b></p>
+  <p class="subtitle">Tworzenie prawa w Polsce · Budowa systemu prawa w Polsce · dr Izabela Bernatek-Zaguła · 29.10.2026 · ze slajdów (plik „System prawa w Polsce A”)</p>
 
   <ul class="toc">
-    <li><a href="#norma">Norma prawna jako wypowiedź</a></li>
-    <li><a href="#elementy">Co wskazuje norma</a></li>
+    <li><a href="#funkcje">Funkcje prawa</a></li>
+    <li><a href="#jezyk">Prawo a język</a></li>
+    <li><a href="#norma">Norma prawna</a></li>
+    <li><a href="#system">Prawo jako system</a></li>
+    <li><a href="#zrodla">Źródła prawa: hierarchia</a></li>
+    <li><a href="#tk">Trybunał Konstytucyjny</a></li>
+    <li><a href="#obowiazywanie">Kiedy prawo obowiązuje</a></li>
     <li><a href="#fiszki-sekcja">Fiszki</a></li>
     <li><a href="#test">Mini-test</a></li>
   </ul>
 
-  <!-- ================= SLAJDY ================= -->
-  <div class="raw">
-    <p><b>Slajd</b> <span class="egz">EGZ</span></p>
-    <p>NORMA PRAWNA WYRAŻANA JEST JAKO WYPOWIEDŹ: SUGESTYWNA i PERFORMATYWNA</p>
-    <p>wskazuje:</p>
-    <p>• <i>kto?</i> – adresat</p>
-    <p>• <i>w jakich okolicznościach?</i> – zakres zastosowania</p>
-    <p>• <i>jak powinien się zachować?</i> – zakres normowania</p>
+  <div class="sticky">
+    <span class="hand">Ściąga</span>
+    <p><b>4 funkcje prawa:</b> organizacyjna (porządkująca, stabilizacyjna) · ochronna · represyjna i wychowawcza · dynamizująca.</p>
+    <p><b>Język:</b> semantyka (znak ↔ sens), syntaktyka (znak ↔ znak), pragmatyka (znak ↔ twórca). Funkcje wypowiedzi: opisowa, ekspresywna, <b>sugestywna</b>, <b>performatywna</b>.</p>
+    <p><b>Norma prawna</b> = wypowiedź sugestywna i performatywna: <b>kto</b> (adresat), <b>w jakich okolicznościach</b> (zakres zastosowania), <b>jak ma się zachować</b> (zakres normowania).</p>
+    <p><b>Normy prawa:</b> generalne, abstrakcyjne, wysłowione w aktach prawotwórczych. <b>System:</b> spójny i zupełny.</p>
+    <p><b>Hierarchia:</b> Konstytucja → ustawy → ratyfikowane umowy międzynarodowe → rozporządzenia → akty prawa miejscowego.</p>
+    <p><b>Stanowione obowiązuje:</b> kompetentny podmiot + forma + sankcja. <b>Zwyczajowe:</b> uzasadnienie aksjologiczne.</p>
   </div>
 
-  <div class="sticky">
-    <span class="hand">Ściąga (na razie)</span>
-    <p>Norma prawna to wypowiedź <b>sugestywna</b> i <b>performatywna</b>.</p>
-    <p><b>kto?</b> → <b>adresat</b> · <b>w jakich okolicznościach?</b> → <b>zakres zastosowania</b> · <b>jak ma się zachować?</b> → <b>zakres normowania</b></p>
+  <h2>Tworzenie prawa w Polsce</h2>
+  <div class="raw">
+    <p><b>PRAWO</b> to zbiór ustalonych norm, reguł postępowania, ale i zespół wypowiedzi, które są zapisane, utrwalone w postaci znaków językowych.</p>
+  </div>
+  <p>Pytanie wyjściowe z wykładu: <b>po co tworzymy prawo? Jakie są jego funkcje (zadania)?</b></p>
+
+  <!-- ================= FUNKCJE ================= -->
+  <h2 id="funkcje">Funkcje prawa <span class="egz">EGZ</span></h2>
+  <div class="table-wrap"><table>
+    <tr><th>Funkcja</th><th>Na czym polega (slajd)</th></tr>
+    <tr><td><b>organizacyjna</b><br>= porządkująca = <b>stabilizacyjna</b></td><td>Regulując stosunki społeczne prawem, <b>wprowadzamy i utrwalamy ład</b> w społeczeństwie. Norma prawna daje wyraźny sygnał: <b>kto i jak powinien się zachować</b>, zgodnie z uznanym systemem wartości, czego oczekujemy od siebie wzajemnie i od państwa. Możliwe, gdy prawo jest <b>stabilne</b>.</td></tr>
+    <tr><td><b>ochronna</b></td><td>Reguluje <b>rozwiązywanie konfliktów</b>. Prawo chroni różne wartości: <b>a)</b> zgodne z uznanym systemem wartości, <b>b)</b> zgodne z interesem państwa jako organizacji, partii politycznej sprawującej władzę.</td></tr>
+    <tr><td><b>represyjna i wychowawcza</b></td><td><b>Edukacja za pomocą prawa</b>, żeby wyeliminować odstępstwa od powszechnie obowiązujących reguł. Prawo reguluje działania i skutki (nie)przestrzegania jego norm i ma zapewniać <b>sprawiedliwą represję</b>.</td></tr>
+    <tr><td><b>dynamizująca</b></td><td>Powoduje <b>zmiany</b> w życiu społecznym. Prawo <b>nadąża za zmieniającymi się potrzebami</b> społeczeństwa, wynikającymi z czasu, miejsca i sytuacji politycznej.</td></tr>
+  </table></div>
+  <div class="box">
+    <p><b>Napięcie do zapamiętania:</b> funkcja <b>stabilizacyjna</b> wymaga, żeby prawo się nie zmieniało, a <b>dynamizująca</b>, żeby się zmieniało. Dobre prawo łączy jedno i drugie: jest stabilne, ale nadąża za życiem.</p>
+  </div>
+
+  <!-- ================= JĘZYK ================= -->
+  <h2 id="jezyk">Prawo wyraża się za pomocą języka <span class="egz">EGZ</span></h2>
+  <p>Język <b>opisuje świat</b>, jakim jest, <b>przekazuje emocje</b> i <b>tworzy</b>. Badamy go w trzech płaszczyznach:</p>
+  <div class="table-wrap"><table>
+    <tr><th>Dział</th><th>Bada stosunek…</th><th>Przykład ze slajdu</th></tr>
+    <tr><td><b>1. semantyka</b></td><td>znaku do jego <b>sensu</b>; funkcje wypowiedzi</td><td>zob. 4 funkcje niżej</td></tr>
+    <tr><td><b>2. syntaktyka</b></td><td>znaków <b>między sobą</b>: jak łączą się w logiczną i celową wypowiedź</td><td>znaczenie spójników: <i>i, a, lub, albo, lecz, bądź</i></td></tr>
+    <tr><td><b>3. pragmatyka</b></td><td>znaku do jego <b>twórcy</b> (kto go nadaje); normy kompetencyjne</td><td><b>gest policjanta</b> a ten sam gest innej osoby na ulicy</td></tr>
+  </table></div>
+
+  <h3>Funkcje wypowiedzi (semantyka)</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Funkcja</th><th>Co robi zdanie</th><th>Przykład ze slajdu</th></tr>
+    <tr><td><b>opisowa</b> (deskryptywna)</td><td><b>opisuje</b> rzeczywistość, w sensie logicznym (prawda / fałsz)</td><td>„to jest sędzia”, „sąd idzie”</td></tr>
+    <tr><td><b>ekspresywna</b></td><td>wyraża <b>emocje</b></td><td>„nie zgadzam się!”, „jak się cieszę!”</td></tr>
+    <tr><td><b>sugestywna</b></td><td>wyraża sugestię, <b>jak należy się zachować</b>, jak być powinno</td><td>„umów należy dotrzymywać”</td></tr>
+    <tr><td><b>performatywna</b> (dokonawcza)</td><td><b>tworzy rzeczywistość</b> samym wypowiedzeniem</td><td>„ogłaszam was mężem i żoną”</td></tr>
+  </table></div>
+  <div class="box dop">
+    <p><b>Pragmatyka po ludzku:</b> ruch ręki „stój” znaczy coś prawnie tylko wtedy, gdy wykonuje go <b>policjant</b>, bo ma do tego <b>kompetencję</b>. Ten sam gest przechodnia nikogo nie wiąże. Liczy się więc nie tylko znak, ale też <b>kto</b> go nadaje.</p>
+    <p><b>Syntaktyka po ludzku:</b> w prawie „lub” i „albo” to nie to samo. „Lub” dopuszcza obie możliwości naraz, a „albo” tylko jedną z nich. Jeden spójnik może zmienić sens przepisu.</p>
   </div>
 
   <!-- ================= NORMA ================= -->
-  <h2 id="norma">Norma prawna jako wypowiedź <span class="egz">EGZ</span></h2>
-  <p>Według slajdu norma prawna jest wypowiedzią <b>sugestywną</b> i <b>performatywną</b>.</p>
-  <div class="box dop">
-    <ul>
-      <li><b>Sugestywna</b>: ma <b>wpłynąć na zachowanie</b> adresata, czyli skłonić go, żeby zachował się w określony sposób. Nie opisuje świata, tylko wskazuje, jak <b>powinno</b> być. Dlatego normy <b>nie jest ani prawdziwa, ani fałszywa</b>: można ją najwyżej ocenić jako obowiązującą albo nie, słuszną albo nie.</li>
-      <li><b>Performatywna</b> (od ang. <i>to perform</i>, „dokonywać”, pojęcie J.L. Austina): samo wypowiedzenie jej przez uprawniony podmiot, w odpowiedniej formie, <b>dokonuje czynności</b>, bo <b>tworzy obowiązek</b>. Podobnie „ogłaszam was mężem i żoną” nie opisuje ślubu, tylko go zawiera.</li>
-    </ul>
+  <h2 id="norma">Norma prawna <span class="egz">EGZ</span></h2>
+  <div class="raw">
+    <p>NORMA PRAWNA WYRAŻANA JEST JAKO WYPOWIEDŹ: SUGESTYWNA i PERFORMATYWNA</p>
+    <p>wskazuje: <i>kto?</i> – adresat; <i>w jakich okolicznościach?</i> – zakres zastosowania; <i>jak powinien się zachować?</i> – zakres normowania</p>
   </div>
-  <div class="compare">
-    <div><h4>Zdanie opisowe (w logice: zdanie)</h4><p>„Kierowcy zwalniają przed przejściem.”<br>Opisuje fakt, więc jest <b>prawdziwe albo fałszywe</b>.</p></div>
-    <div><h4>Norma (wypowiedź powinnościowa)</h4><p>„Kierowca powinien zwolnić przed przejściem.”<br>Wskazuje <b>powinność</b>, więc <b>nie ma wartości logicznej</b>.</p></div>
-  </div>
-
-  <!-- ================= ELEMENTY ================= -->
-  <h2 id="elementy">Co wskazuje norma prawna <span class="egz">EGZ</span></h2>
+  <p>Norma łączy dwie funkcje z tabeli wyżej: <b>sugestywną</b> (mówi, jak należy się zachować) i <b>performatywną</b> (samo jej ustanowienie tworzy obowiązek). Dlatego norma <b>nie opisuje</b> świata i nie jest ani prawdziwa, ani fałszywa.</p>
   <div class="table-wrap"><table>
     <tr><th>Pytanie</th><th>Element normy</th><th>Przykład: „Kierowca zbliżający się do przejścia dla pieszych powinien zachować szczególną ostrożność”</th></tr>
     <tr><td><b>kto?</b></td><td><b>adresat</b></td><td>kierowca</td></tr>
@@ -66,9 +108,96 @@
     <tr><td><b>jak powinien się zachować?</b></td><td><b>zakres normowania</b></td><td>zachować szczególną ostrożność</td></tr>
   </table></div>
   <div class="box dop">
-    <p><b>Łącznik z budową normy:</b> <b>adresat</b> i <b>okoliczności</b> (zakres zastosowania) tworzą zwykle <b>hipotezę</b> normy, a <b>nakazane zachowanie</b> (zakres normowania) tworzy <b>dyspozycję</b>. Jeśli prowadząca będzie mówić o hipotezie, dyspozycji i sankcji, to jest ten sam podział, tylko innymi słowami.</p>
+    <p><b>Łącznik z budową normy:</b> adresat i okoliczności tworzą zwykle <b>hipotezę</b> normy, a nakazane zachowanie tworzy <b>dyspozycję</b>. Jeśli padną słowa „hipoteza, dyspozycja, sankcja”, to ten sam podział innymi słowami.</p>
   </div>
-  <div class="box check"><p><b>Czekam na dalsze slajdy albo dyktando.</b></p></div>
+
+  <!-- ================= SYSTEM ================= -->
+  <h2 id="system">Budowa systemu prawa w Polsce <span class="egz">EGZ</span></h2>
+  <div class="raw">
+    <p><b>PRAWO</b> to zbiór uporządkowanych i wzajemnie ze sobą powiązanych reguł postępowania, norm o charakterze:</p>
+    <p>– <b>generalnym</b>, to jest skierowanych do ogólnie określonego kręgu adresatów;</p>
+    <p>– <b>abstrakcyjnym</b>, to jest obowiązujących w nieokreślonym przedziale czasowym (aż do uchylenia);</p>
+    <p>– <b>wysłowionych w tekstach aktów prawotwórczych</b>.</p>
+    <p>Przyjmuje się w nauce, iż ma następujące cechy: jest <b>spójny</b> (wewnętrznie niesprzeczny) i <b>zupełny</b> (pozbawiony luk).</p>
+  </div>
+  <div class="compare">
+    <div><h4>Generalna</h4><p>Adresat określony <b>ogólnie</b>, przez cechy: „każdy kierowca”, „pracodawca”. Nie z imienia i nazwiska.</p></div>
+    <div><h4>Abstrakcyjna</h4><p>Obowiązuje <b>bez określonego końca</b>, za każdym razem, gdy zajdą okoliczności, aż do uchylenia.</p></div>
+  </div>
+  <div class="box dop">
+    <p><b>Przeciwieństwo</b> to akt <b>indywidualny i konkretny</b>: dotyczy imiennie wskazanej osoby i jednej sprawy, np. wyrok sądu albo decyzja o pozwoleniu na budowę. To już nie tworzenie prawa, tylko jego <b>stosowanie</b>.</p>
+    <p><b>Spójność i zupełność</b> to założenia, a w praktyce zdarzają się sprzeczności (usuwa się je regułami kolizyjnymi, np. <span class="lat">lex superior</span>, <span class="lat">lex posterior</span>, <span class="lat">lex specialis</span>; zob. <a href="../Jezyk%20Lacinski%20dla%20Prawnikow/01_Cwiczenia_I.html">Łacina</a>) i luki.</p>
+  </div>
+
+  <!-- ================= ŹRÓDŁA ================= -->
+  <h2 id="zrodla">Źródła powszechnie obowiązującego prawa: struktura hierarchiczna <span class="egz">EGZ</span></h2>
+  <div class="pyramid">
+    <div class="l1"><b>Konstytucja</b></div>
+    <div class="l2"><b>ustawy</b></div>
+    <div class="l3"><b>ratyfikowane umowy międzynarodowe</b></div>
+    <div class="l4"><b>rozporządzenia</b></div>
+    <div class="l5"><b>akty prawa miejscowego</b> (tylko na obszarze działania organu)</div>
+  </div>
+  <div class="table-wrap"><table>
+    <tr><th>Źródło</th><th>Ze slajdu</th></tr>
+    <tr><td><b>Konstytucja</b></td><td>najwyższe prawo</td></tr>
+    <tr><td><b>ustawy</b></td><td>tworzone <b>wyłącznie przez parlament</b>, w specjalnym trybie zwanym <b>ustawodawczym</b>. Tylko one regulują <b>status jednostki</b> w państwie i <b>budżet</b>.</td></tr>
+    <tr><td><b>umowy międzynarodowe</b> ratyfikowane za uprzednią zgodą wyrażoną w ustawie</td><td>po ogłoszeniu w <b>Dzienniku Ustaw</b> „stanowi część krajowego porządku prawnego” (<b>art. 91 ust. 1</b> Konstytucji)</td></tr>
+    <tr><td><b>rozporządzenia</b></td><td>wydawane <b>na podstawie upoważnienia zawartego w ustawie</b>, <b>wykonawcze</b> wobec ustawy; wydają je: <b>Prezydent</b>, <b>Rada Ministrów</b>, <b>Prezes Rady Ministrów</b>, <b>przewodniczący komitetów</b> określonych w ustawach</td></tr>
+    <tr><td><b>akty prawa miejscowego</b></td><td>ustanawiane przez <b>organy samorządu terytorialnego</b> oraz <b>terenowe organy administracji rządowej</b>; obowiązują na <b>obszarze działania</b> tych organów</td></tr>
+  </table></div>
+  <div class="box check">
+    <p><b>Dwie rzeczy, których slajd nie mówi, a które warto wiedzieć:</b></p>
+    <ul>
+      <li>Rozporządzenia wydają też <b>ministrowie</b> kierujący działami administracji i <b>KRRiT</b> (art. 92 i 213 Konstytucji). Zresztą przykład ze slajdu to właśnie rozporządzenie <b>Ministra</b> Sprawiedliwości.</li>
+      <li>Umowa ratyfikowana <b>za zgodą wyrażoną w ustawie</b> ma <b>pierwszeństwo przed ustawą</b>, jeśli ustawy nie da się z nią pogodzić (art. 91 ust. 2). Dlatego niektóre podręczniki stawiają ją nad ustawą. Na kolokwium trzymaj się kolejności ze slajdu.</li>
+    </ul>
+  </div>
+
+  <h3>Przykład „piramidy” ze slajdu</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Poziom</th><th>Przykład</th></tr>
+    <tr><td>Konstytucja</td><td>Konstytucja RP</td></tr>
+    <tr><td>ustawa</td><td><b>k.c.</b> (Kodeks cywilny), <b>k.p.c.</b> (Kodeks postępowania cywilnego)</td></tr>
+    <tr><td>rozporządzenie</td><td>Rozporządzenie <b>Ministra Sprawiedliwości</b> w sprawie określenia wzorów urzędowych formularzy; Rozporządzenie <b>Ministra Rozwoju, Pracy i Technologii</b> w sprawie wzoru formularza wniosku o pozwolenie na budowę</td></tr>
+    <tr><td><i>stosowanie prawa</i></td><td><b>wezwanie na rozprawę</b>, <b>pozwolenie na budowę</b></td></tr>
+    <tr><td>obok systemu</td><td><b>prawo zwyczajowe</b>, np. <b>art. 5 k.c.</b></td></tr>
+  </table></div>
+  <p class="muted">Ostatnie piętro (wezwanie, pozwolenie) to już nie źródła prawa, tylko <b>akty stosowania prawa</b>: indywidualne i konkretne, wydane na podstawie wszystkiego, co wyżej. Slajd pokazuje, jak od Konstytucji schodzi się aż do kartki, którą dostajesz do ręki.</p>
+
+  <!-- ================= TK ================= -->
+  <h2 id="tk">Trybunał Konstytucyjny: „sąd nad prawem” <span class="egz">EGZ</span></h2>
+  <p>TK nazywa się często <b>„sądem nad prawem”</b>, bo jego głównym zadaniem jest <b>sprawdzanie zgodności aktów prawnych z Konstytucją</b> (<b>art. 188</b> Konstytucji).</p>
+  <p>Orzeczenie TK o <b>niekonstytucyjności</b> aktu (np. ustawy) powoduje <b>usunięcie</b> wskazanej normy albo całego aktu <b>z systemu prawa</b>.</p>
+  <p class="muted">Łącznik: na TiFP (<a href="../Teoria%20i%20Filozofia%20Prawa/05_Wyklad_V.html#podmiot">Wykład V</a>) TK padł jako przykład wykładni legalnej.</p>
+
+  <!-- ================= OBOWIĄZYWANIE ================= -->
+  <h2 id="obowiazywanie">Kiedy prawo obowiązuje <span class="egz">EGZ</span></h2>
+  <div class="compare">
+    <div>
+      <h4>Prawo stanowione obowiązuje, gdy:</h4>
+      <ol>
+        <li>normę wydał <b>kompetentny podmiot</b> (Prezydent? Sejm? właściciel?);</li>
+        <li>nadał normie <b>określoną formę</b> (pisemną, akt notarialny);</li>
+        <li>jest <b>zdolny do jej wyegzekwowania</b> za pomocą <b>sankcji</b>: kary, egzekucji, nieważności.</li>
+      </ol>
+    </div>
+    <div>
+      <h4>Prawo zwyczajowe obowiązuje, gdy:</h4>
+      <p>jest <b>akceptowane</b> z uwagi na zgodność z <b>systemem aksjologicznym</b>, czyli ma <b>uzasadnienie aksjologiczne</b>.</p>
+    </div>
+  </div>
+  <div class="box">
+    <p><b>Aksjologia</b>: z greckiego <span class="lat">axios</span> (godny, cenny) + <span class="lat">logos</span> (nauka). To dział filozofii, ogólna teoria, <b>nauka o systemie wartości</b>.</p>
+  </div>
+  <h3>Art. 5 k.c.: odesłanie do systemu wartości</h3>
+  <div class="raw">
+    <p>Nie można czynić ze swego prawa użytku, który by był sprzeczny ze społeczno-gospodarczym przeznaczeniem tego prawa lub z zasadami współżycia społecznego. Takie działanie lub zaniechanie uprawnionego nie jest uważane za wykonywanie prawa i nie korzysta z ochrony.</p>
+  </div>
+  <div class="box dop">
+    <p><b>Po ludzku:</b> masz prawo, ale nie możesz go używać „na złość” albo wbrew jego sensowi. Klasyczny przykład: właściciel stawia na granicy wysoki płot tylko po to, żeby zasłonić sąsiadowi światło. Formalnie korzysta ze swojej własności, ale sąd może odmówić mu ochrony.</p>
+    <p>W podręcznikach art. 5 k.c. nazywa się zwykle <b>klauzulą generalną</b> („zasady współżycia społecznego”). Prowadząca podała go jako przykład odesłania do <b>prawa zwyczajowego</b> i systemu wartości, więc na kolokwium pisz tak, jak na slajdzie.</p>
+  </div>
 
   <!-- ================= FISZKI ================= -->
   <h2 id="fiszki-sekcja">Fiszki</h2>
@@ -86,19 +215,47 @@
 
 <script>
 window.FISZKI = [
+  { tag: "EGZ", q: "Prawo: definicja ze slajdu (tworzenie prawa)", a: "Zbiór ustalonych <b>norm, reguł postępowania</b>, ale i zespół <b>wypowiedzi</b> zapisanych, utrwalonych w postaci <b>znaków językowych</b>." },
+  { tag: "EGZ", q: "4 funkcje prawa", a: "1. <b>organizacyjna</b> (porządkująca, stabilizacyjna)<br>2. <b>ochronna</b><br>3. <b>represyjna i wychowawcza</b><br>4. <b>dynamizująca</b>" },
+  { tag: "EGZ", q: "Funkcja organizacyjna prawa", a: "= porządkująca = <b>stabilizacyjna</b>: wprowadza i utrwala <b>ład</b>; norma mówi, <b>kto i jak</b> ma się zachować. Wymaga <b>stabilności</b> prawa." },
+  { tag: "EGZ", q: "Funkcja ochronna prawa", a: "Reguluje <b>rozwiązywanie konfliktów</b>; chroni wartości zgodne z uznanym systemem wartości oraz z interesem państwa (partii sprawującej władzę)." },
+  { tag: "EGZ", q: "Funkcja represyjna i wychowawcza", a: "<b>Edukacja za pomocą prawa</b>, eliminowanie odstępstw od reguł, <b>sprawiedliwa represja</b> za nieprzestrzeganie norm." },
+  { tag: "EGZ", q: "Funkcja dynamizująca", a: "Prawo powoduje <b>zmiany</b> w życiu społecznym i <b>nadąża</b> za zmieniającymi się potrzebami (czas, miejsce, sytuacja polityczna)." },
+  { tag: "EGZ", q: "Semantyka, syntaktyka, pragmatyka", a: "<b>semantyka</b>: znak ↔ <b>sens</b><br><b>syntaktyka</b>: znak ↔ <b>znak</b> (spójniki)<br><b>pragmatyka</b>: znak ↔ <b>twórca</b> (gest policjanta)" },
+  { tag: "EGZ", q: "4 funkcje wypowiedzi", a: "<b>opisowa</b> (sąd idzie), <b>ekspresywna</b> (jak się cieszę!), <b>sugestywna</b> (umów należy dotrzymywać), <b>performatywna</b> (ogłaszam was mężem i żoną)" },
   { tag: "EGZ", q: "Jako jaka wypowiedź jest wyrażana norma prawna?", a: "<b>Sugestywna</b> i <b>performatywna</b>." },
-  { tag: "EGZ", q: "Co wskazuje norma prawna? (3 pytania)", a: "<b>kto?</b> → <b>adresat</b><br><b>w jakich okolicznościach?</b> → <b>zakres zastosowania</b><br><b>jak powinien się zachować?</b> → <b>zakres normowania</b>" },
-  { tag: "EGZ", q: "Zakres zastosowania normy", a: "Odpowiada na pytanie: <b>w jakich okolicznościach?</b>" },
-  { tag: "EGZ", q: "Zakres normowania", a: "Odpowiada na pytanie: <b>jak adresat powinien się zachować?</b>" },
-  { tag: "rozwinięcie", q: "Wypowiedź sugestywna", a: "Ma <b>wpłynąć na zachowanie</b> adresata; nie opisuje świata, więc <b>nie jest prawdziwa ani fałszywa</b>." },
-  { tag: "rozwinięcie", q: "Wypowiedź performatywna", a: "Samo jej wypowiedzenie <b>dokonuje czynności</b> (tworzy obowiązek), jak „ogłaszam was mężem i żoną”. Pojęcie J.L. Austina." }
+  { tag: "EGZ", q: "Co wskazuje norma prawna?", a: "<b>kto?</b> → <b>adresat</b><br><b>w jakich okolicznościach?</b> → <b>zakres zastosowania</b><br><b>jak powinien się zachować?</b> → <b>zakres normowania</b>" },
+  { tag: "EGZ", q: "Normy prawa mają charakter… (3 cechy)", a: "<b>generalny</b> (ogólnie określony krąg adresatów)<br><b>abstrakcyjny</b> (nieokreślony czas, aż do uchylenia)<br><b>wysłowione w tekstach aktów prawotwórczych</b>" },
+  { tag: "EGZ", q: "Cechy systemu prawa przyjmowane w nauce", a: "<b>spójny</b> (wewnętrznie niesprzeczny) i <b>zupełny</b> (pozbawiony luk)" },
+  { tag: "EGZ", q: "Hierarchia źródeł powszechnie obowiązującego prawa", a: "Konstytucja → <b>ustawy</b> → <b>ratyfikowane umowy międzynarodowe</b> → <b>rozporządzenia</b> → <b>akty prawa miejscowego</b>" },
+  { tag: "EGZ", q: "Ustawy: kto i co tylko one regulują?", a: "Wyłącznie <b>parlament</b>, w trybie <b>ustawodawczym</b>; tylko one regulują <b>status jednostki</b> i <b>budżet</b>." },
+  { tag: "EGZ", q: "Art. 91 ust. 1 Konstytucji", a: "Ratyfikowana umowa międzynarodowa po ogłoszeniu w <b>Dzienniku Ustaw</b> „stanowi część krajowego porządku prawnego”." },
+  { tag: "EGZ", q: "Rozporządzenia: podstawa i kto wydaje", a: "Na podstawie <b>upoważnienia w ustawie</b>, <b>wykonawcze</b> wobec ustawy; Prezydent, Rada Ministrów, Prezes RM, przewodniczący komitetów (+ ministrowie, KRRiT)." },
+  { tag: "EGZ", q: "Akty prawa miejscowego", a: "Organy <b>samorządu terytorialnego</b> i <b>terenowe organy administracji rządowej</b>; obowiązują na <b>obszarze działania</b> organu." },
+  { tag: "EGZ", q: "Dlaczego TK to „sąd nad prawem”?", a: "Sprawdza <b>zgodność aktów prawnych z Konstytucją</b> (<b>art. 188</b>); orzeczenie o niekonstytucyjności <b>usuwa</b> normę lub akt z systemu." },
+  { tag: "EGZ", q: "Kiedy obowiązuje prawo stanowione?", a: "1. wydał je <b>kompetentny podmiot</b><br>2. ma <b>określoną formę</b><br>3. da się je <b>wyegzekwować sankcją</b> (kara, egzekucja, nieważność)" },
+  { tag: "EGZ", q: "Kiedy obowiązuje prawo zwyczajowe?", a: "Gdy jest <b>akceptowane</b> ze względu na zgodność z systemem wartości, czyli ma <b>uzasadnienie aksjologiczne</b>." },
+  { tag: "EGZ", q: "Aksjologia", a: "gr. <i>axios</i> (godny, cenny) + <i>logos</i> (nauka): <b>nauka o systemie wartości</b>, dział filozofii." },
+  { tag: "EGZ", q: "Art. 5 k.c.", a: "Nie można czynić ze swego prawa użytku sprzecznego ze <b>społeczno-gospodarczym przeznaczeniem</b> prawa lub z <b>zasadami współżycia społecznego</b>; takie działanie nie korzysta z ochrony. Przykład odesłania do systemu wartości." },
+  { tag: "rozwinięcie", q: "Wezwanie na rozprawę, pozwolenie na budowę: co to w piramidzie?", a: "<b>Akty stosowania prawa</b> (indywidualne i konkretne), nie źródła prawa." }
 ];
 window.QUIZ = [
-  { q: "Norma prawna jest wyrażana jako wypowiedź:", o: ["opisowa i prawdziwa", "sugestywna i performatywna", "oceniająca i opisowa", "pytająca"], c: 1, w: "Slajd." },
-  { q: "Pytanie „kto?” w normie prawnej wskazuje:", o: ["zakres normowania", "adresata", "zakres zastosowania", "sankcję"], c: 1, w: "Okoliczności: zakres zastosowania; zachowanie: zakres normowania." },
-  { q: "„W jakich okolicznościach?” to:", o: ["adresat", "zakres normowania", "zakres zastosowania", "dyspozycja"], c: 2, w: "Zakres zastosowania." },
-  { q: "„Jak powinien się zachować?” to:", o: ["zakres normowania", "zakres zastosowania", "adresat", "hipoteza"], c: 0, w: "Zakres normowania." },
-  { q: "Norma prawna, w przeciwieństwie do zdania w sensie logicznym:", o: ["jest zawsze prawdziwa", "jest zawsze fałszywa", "nie jest ani prawdziwa, ani fałszywa", "jest prawdziwa, jeśli obowiązuje"], c: 2, w: "Wskazuje powinność, nie opisuje faktów." }
+  { q: "Funkcja organizacyjna prawa to inaczej funkcja:", o: ["represyjna", "porządkująca (stabilizacyjna)", "dynamizująca", "ekspresywna"], c: 1, w: "Wprowadza i utrwala ład." },
+  { q: "Funkcja prawa polegająca na nadążaniu za zmieniającymi się potrzebami społeczeństwa to:", o: ["ochronna", "dynamizująca", "organizacyjna", "wychowawcza"], c: 1, w: "Powoduje zmiany w życiu społecznym." },
+  { q: "„Umów należy dotrzymywać” to przykład funkcji wypowiedzi:", o: ["opisowej", "ekspresywnej", "sugestywnej", "performatywnej"], c: 2, w: "Mówi, jak należy się zachować." },
+  { q: "„Ogłaszam was mężem i żoną” to przykład funkcji:", o: ["performatywnej", "opisowej", "sugestywnej", "ekspresywnej"], c: 0, w: "Tworzy rzeczywistość." },
+  { q: "Gest policjanta a ten sam gest przechodnia ilustruje:", o: ["semantykę", "syntaktykę", "pragmatykę", "aksjologię"], c: 2, w: "Stosunek znaku do twórcy." },
+  { q: "Znaczenie spójników „lub”, „albo” bada:", o: ["semantyka", "syntaktyka", "pragmatyka", "aksjologia"], c: 1, w: "Powiązania znaków w wypowiedź." },
+  { q: "„Jak powinien się zachować?” w normie prawnej to:", o: ["adresat", "zakres zastosowania", "zakres normowania", "sankcja"], c: 2, w: "Okoliczności: zakres zastosowania." },
+  { q: "Norma generalna to norma:", o: ["obowiązująca bezterminowo", "skierowana do ogólnie określonego kręgu adresatów", "wydana przez generała", "zawsze ustawowa"], c: 1, w: "Abstrakcyjna = nieokreślony czas." },
+  { q: "Norma abstrakcyjna to norma:", o: ["niejasna", "obowiązująca w nieokreślonym przedziale czasu, aż do uchylenia", "skierowana do jednej osoby", "zwyczajowa"], c: 1, w: "Generalna = adresaci." },
+  { q: "Zupełność systemu prawa oznacza, że jest on:", o: ["niesprzeczny", "pozbawiony luk", "spisany w jednym kodeksie", "zgodny z Konstytucją"], c: 1, w: "Spójność = niesprzeczność." },
+  { q: "Tylko ustawy mogą regulować:", o: ["wzory formularzy", "status jednostki w państwie i budżet", "porządek w gminie", "regulamin sądu"], c: 1, w: "Slajd o ustawach." },
+  { q: "Rozporządzenie jest wydawane:", o: ["z własnej inicjatywy ministra", "na podstawie upoważnienia zawartego w ustawie", "przez Sejm", "przez sądy"], c: 1, w: "Wykonawcze wobec ustawy." },
+  { q: "Zgodność aktów prawnych z Konstytucją bada TK na podstawie:", o: ["art. 5 k.c.", "art. 91 Konstytucji", "art. 188 Konstytucji", "art. 2 Konstytucji"], c: 2, w: "„Sąd nad prawem”." },
+  { q: "Prawo zwyczajowe obowiązuje, gdy:", o: ["wydał je Sejm", "ma uzasadnienie aksjologiczne", "ma formę aktu notarialnego", "zatwierdzi je TK"], c: 1, w: "Akceptacja z uwagi na system wartości." },
+  { q: "Który warunek NIE dotyczy obowiązywania prawa stanowionego (wg slajdu)?", o: ["kompetentny podmiot", "określona forma", "możliwość egzekwowania sankcją", "uzasadnienie aksjologiczne"], c: 3, w: "To warunek prawa zwyczajowego." },
+  { q: "Wezwanie na rozprawę to:", o: ["źródło prawa powszechnie obowiązującego", "akt stosowania prawa", "akt prawa miejscowego", "rozporządzenie"], c: 1, w: "Indywidualny i konkretny." }
 ];
 </script>
 <script src="../_zeszyt/zeszyt.js"></script>
