@@ -10,6 +10,7 @@ Bloki: **koncepcje sprawiedliwości** (Arystoteles, John Rawls, Chaim Perelman) 
 | III (15.10) | Status metodologiczny: filozofia prawa, jurysprudencja, teoria prawa; ideologie stosowania prawa; źródła teorii argumentacji | [03_Wyklad_III.html](03_Wyklad_III.html) | dyktando (zdjęcia z grupy) + nagranie (PDF), 20 fiszek, mini-test 12 pytań |
 | IV (22.10) | Racjonalny dyskurs praktyczny (Alexy), usprawiedliwienie wewnętrzne/zewnętrzne, audytorium Perelmana, wykładnia prawa: pojęcie i cel | [04_Wyklad_IV.html](04_Wyklad_IV.html) | dyktando, 22 fiszki, mini-test 15 pytań |
 | V (28.10) | Podział wykładni prawa | [05_Wyklad_V.html](05_Wyklad_V.html) | w trakcie |
+| VI (4.11) | Wykładnia językowa: dyrektywy | [06_Wyklad_VI.html](06_Wyklad_VI.html) | urywki z czatu grupy, brak pkt 1 |
 
 ## Do wyjaśnienia
 - Czy wymagane są konkretne paragrafy Radbrucha, czy tylko struktura dzieła?
