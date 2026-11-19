@@ -8,7 +8,7 @@
 | III (28.10) | Ustawa XII tablic: systematyka | [03_Wyklad_III.html](03_Wyklad_III.html) | w trakcie, dyktando na żywo |
 | IV (4.11) | Proces cywilny: legisakcyjny, formułkowy, kognicyjny; pomoc własna; 2 fazy | [04_Wyklad_IV.html](04_Wyklad_IV.html) | pełna notatka grupy (Word): okresy prawa, actio, fazy; 13 fiszek, mini-test 9 pytań |
 | V (13.11) | Sędzia prywatny, sądy kolegialne (centumwiralny, decemwiralny, rekuperatorów), właściwość sądu, strony, zdolność procesowa | [05_Wyklad_V.html](05_Wyklad_V.html) | transkrypt nagrania + 2 notatki grupy, 22 fiszki, mini-test 15 pytań |
-| VI (19.11) | Legitymacja procesowa czynna i bierna; oddalenie a odrzucenie; zastępstwo procesowe | [06_Wyklad_VI.html](06_Wyklad_VI.html) | notatki na żywo, 9 fiszek, mini-test 6 pytań |
+| VI (19.11) | Legitymacja procesowa czynna i bierna; oddalenie a odrzucenie; zastępstwo procesowe (kognitor, prokurator) | [06_Wyklad_VI.html](06_Wyklad_VI.html) | notatki na żywo, 11 fiszek, mini-test 9 pytań |
 
 ## Do wyjaśnienia
 - Brakuje punktu 2 z listy „PR, przedmiot” (są 1 i 3).
