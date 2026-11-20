@@ -12,6 +12,7 @@ Bloki: **koncepcje sprawiedliwości** (Arystoteles, John Rawls, Chaim Perelman) 
 | V (28.10) | Podział wykładni prawa | [05_Wyklad_V.html](05_Wyklad_V.html) | w trakcie |
 | VI (4.11) | Wykładnia językowa: dyrektywy | [06_Wyklad_VI.html](06_Wyklad_VI.html) | urywki z czatu grupy, brak pkt 1 |
 | VII (13.11) | Argumenty wykładni logicznej, wykładnia systemowa i funkcjonalna, podział wg wyniku i materiałów, teorie wykładni (opisowa, normatywna: statyczna/dynamiczna) | [07_Wyklad_VII.html](07_Wyklad_VII.html) | notatka grupy (Word), 14 fiszek, mini-test 10 pytań |
+| VIII (20.11) | Obowiązywanie prawa (absolutne/relatywne; tetyczne, aksjologiczne, behawiorystyczne), teorie obowiązywania (prawo natury, pozytywizm, Kelsen, realizm), desuetudo | [08_Wyklad_VIII.html](08_Wyklad_VIII.html) | notatka grupy (Word) + czat, 15 fiszek, mini-test 9 pytań |
 
 ## Do wyjaśnienia
 - Czy wymagane są konkretne paragrafy Radbrucha, czy tylko struktura dzieła?
