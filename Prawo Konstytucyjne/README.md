@@ -9,7 +9,7 @@
 ## Ćwiczenia (mgr Aldona Sondej)
 | # | Temat | Plik | Status |
 |---|-------|------|--------|
-| I | Parlament: geneza, struktura, funkcje, UE, kadencja, liczba posłów, Regulamin Sejmu i Senatu | [01_Cwiczenia_I.html](01_Cwiczenia_I.html) | przygotowanie z Banaszaka (wyd. 6, § 35), 25 fiszek, mini-test 11 pytań |
+| I | Parlament: geneza, struktura, funkcje, UE, kadencja, liczba posłów, Regulamin Sejmu i Senatu | [01_Cwiczenia_I.html](01_Cwiczenia_I.html) | przygotowanie z Banaszaka (wyd. 6, § 35), 27 fiszek, mini-test 12 pytań |
 
 ## Zaliczenie
 - Forma: ?
