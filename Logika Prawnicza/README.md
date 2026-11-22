@@ -8,7 +8,7 @@
 
 ## Zaliczenie
 - Forma: ?
-- Prowadzący: ?
+- Prowadzący: mgr Bartłomiej Solarz (prowadzi też ćwiczenia z prawa rzymskiego)
 - Lektury: ?
 
 ## Do wyjaśnienia

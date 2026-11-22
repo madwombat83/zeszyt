@@ -15,7 +15,7 @@
 - Ius naturae: definicja „prawo idealne, sprawiedliwe i słuszne” była przypisana Ulpianowi. Klasyczny Ulpian to „czego natura nauczyła wszystkie istoty żywe”; „zawsze słuszne i dobre” to Paulus. Co podał prowadzący?
 - ~~„Domincjusz?”~~ → rozwiązane: **dominat** (284–476/565), patrz Wykład II.
 
-## Ćwiczenia
+## Ćwiczenia (mgr Bartłomiej Solarz)
 | # | Temat | Plik | Status |
 |---|-------|------|--------|
-| notatki (23/24.10) | Słuszność i dobra wiara, wina a ryzyko, skarga pauliańska, nadużycie prawa | [Cwiczenia_notatki.html](Cwiczenia_notatki.html) | notatka odręczna, 6 fiszek, mini-test 3 pytania |
+| notatki (24.10, mgr Bartłomiej Solarz) | Słuszność i dobra wiara, wina a ryzyko, skarga pauliańska, nadużycie prawa | [Cwiczenia_notatki.html](Cwiczenia_notatki.html) | notatka odręczna, 6 fiszek, mini-test 3 pytania |
