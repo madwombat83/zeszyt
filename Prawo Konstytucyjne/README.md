@@ -11,6 +11,7 @@
 |---|-------|------|--------|
 | I | Parlament: geneza, struktura, funkcje, UE, kadencja, liczba posłów, Regulamin Sejmu i Senatu; system parlamentarny a prezydencki, konstruktywne wotum nieufności (ćw. 21.11) | [01_Cwiczenia_I.html](01_Cwiczenia_I.html) | przygotowanie z Banaszaka (wyd. 6, § 35), 37 fiszek, mini-test 17 pytań |
 | I (wg Konstytucji) | Parlament w przepisach Konstytucji: struktura, kadencja, mandat, organizacja, funkcje, tabela artykułów | [01_Cwiczenia_I_Konstytucja.html](01_Cwiczenia_I_Konstytucja.html) | cytaty z Konstytucji i Regulaminu, 77 fiszek, mini-test 12 pytań |
+| notatki | Rodzaje i cechy konstytucji (24.10?), zasady konstytucyjne (7.11?), podział władz (21.11) | [Cwiczenia_notatki.html](Cwiczenia_notatki.html) | notatki odręczne, 8 fiszek, mini-test 4 pytania |
 
 ## Zaliczenie
 - Forma: ?

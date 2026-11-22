@@ -3,8 +3,8 @@
 ## Zajęcia (warsztaty)
 | # | Temat | Plik | Status |
 |---|-------|------|--------|
-| I | Wprowadzenie: zdanie, sąd, norma; modalność; zdania analityczne i syntetyczne; presupozycje; wieloznaczność i nieostrość | [01_Zajecia_I.html](01_Zajecia_I.html) | slajdy (PDF), 8 fiszek, mini-test 6 pytań |
-| II (21.11) | Podział logiczny (czyn zabroniony); semantyka nazw: desygnat, zakres, rodzaje nazw; stosunki między zakresami | [02_Zajecia_II.html](02_Zajecia_II.html) | slajdy (PDF) + notatki, 15 fiszek, mini-test 9 pytań |
+| I (25.10) | Wprowadzenie: zdanie, sąd, norma; modalność; zdania analityczne i syntetyczne; presupozycje; wieloznaczność i nieostrość | [01_Zajecia_I.html](01_Zajecia_I.html) | slajdy (PDF) + notatki (funktory, przykłady), 13 fiszek, mini-test 9 pytań |
+| II (21.11) | Podział logiczny (czyn zabroniony); semantyka nazw: desygnat, zakres, rodzaje nazw; stosunki między zakresami | [02_Zajecia_II.html](02_Zajecia_II.html) | slajdy (PDF) + notatki (schematy, zadania), 16 fiszek, mini-test 9 pytań |
 
 ## Zaliczenie
 - Forma: ?
@@ -12,5 +12,5 @@
 - Lektury: ?
 
 ## Do wyjaśnienia
-- Data Zajęć I (pierwsze warsztaty Lp)?
+- Zajęcia II: treść zadań (skróty D, K, S, M, P, L, W).
 - Slajd Zajęć II: brzmienie art. 47 § 1 k.w. (skopiowane z k.k.?).
