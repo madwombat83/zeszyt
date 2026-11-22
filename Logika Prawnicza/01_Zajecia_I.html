@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logika prawnicza – Zajęcia I: wprowadzenie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_zeszyt/zeszyt.css">
+<script>try{var p=JSON.parse(localStorage.getItem("zeszyt.paper"));if(p)document.documentElement.setAttribute("data-paper",p);var t=JSON.parse(localStorage.getItem("zeszyt.theme"));if(t&&t!=="auto")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+<header class="toolbar">
+  <div class="crumbs"><a href="../index.html">Zeszyt</a> <span>/</span> Logika prawnicza <span>/</span> Zajęcia I</div>
+  <div class="switch" id="paper-switch"><b>Tło:</b></div>
+  <div class="switch" id="theme-switch"><b>Motyw:</b></div>
+</header>
+
+<main class="page">
+  <h1>Logika prawnicza – Zajęcia I</h1>
+  <p class="subtitle">Podstawy logiki dla prawników: wykład wprowadzający · zdanie, sąd, norma · modalność · presupozycje · wieloznaczność i nieostrość · <b>slajdy (PDF)</b> · dalej: <a href="02_Zajecia_II.html">Zajęcia II</a></p>
+  <div class="box">
+    <p><b>Jak czytać tę stronę:</b> zwykły tekst i szare ramki = <b>slajdy prowadzącego</b>. Zielone = moje uzupełnienia i wyjaśnienia, czerwone = do sprawdzenia (błędy lub literówki na slajdach).</p>
+  </div>
+
+  <nav class="toc"><ul>
+    <li><a href="#po-co">Po co prawnikowi logika</a></li>
+    <li><a href="#mapa">Mapa kursu</a></li>
+    <li><a href="#zdanie">Wypowiedź, zdanie, sąd</a></li>
+    <li><a href="#opis-norma">Zdania opisowe i normatywne</a></li>
+    <li><a href="#modalnosc">Modalność</a></li>
+    <li><a href="#analityczne">Zdania analityczne i syntetyczne</a></li>
+    <li><a href="#presupozycje">Presupozycje</a></li>
+    <li><a href="#wieloznacznosc">Wieloznaczność i nieostrość</a></li>
+  </ul></nav>
+
+  <h2 id="po-co">Znaczenie logiki w pracy prawnika</h2>
+  <ul>
+    <li>Porządkuje analizę przepisów, orzeczeń i materiału dowodowego.</li>
+    <li>Pomaga odróżnić <b>tezę od przesłanek</b>, a <b>wniosek od retorycznej sugestii</b>.</li>
+    <li>Ujawnia założenia, które autor argumentu pozostawił niewypowiedziane.</li>
+    <li>Pozwala sprawdzić spójność stanowiska i poprawność przejścia do konkluzji.</li>
+    <li>Ułatwia formułowanie pism, które są zrozumiałe i możliwe do zweryfikowania.</li>
+  </ul>
+
+  <h2 id="mapa">Mapa kursu</h2>
+  <div class="compare">
+    <div><h3>Język i logika formalna</h3><ul><li>nazwy, zdania, normy</li><li>definicje i podziały</li><li>funktory i kwantyfikatory</li></ul></div>
+    <div><h3>Wnioskowanie i dyskusja</h3><ul><li>dedukcja i subsumpcja</li><li>indukcja, abdukcja, analogia</li><li>ocena argumentów i sofizmatów</li></ul></div>
+  </div>
+
+  <h2 id="zdanie">Zdanie, wypowiedź i sąd <span class="egz">EGZ</span></h2>
+  <div class="table-wrap"><table>
+    <tr><th>Pojęcie</th><th>Co to jest</th></tr>
+    <tr><td><b>Wypowiedź</b></td><td>konkretny akt użycia języka w określonej sytuacji</td></tr>
+    <tr><td><b>Zdanie</b> (w sensie gramatycznym)</td><td>ma określoną budowę, ale nie zawsze stwierdza fakt</td></tr>
+    <tr><td><b>Sąd</b> (propozycja)</td><td>treść, którą można uznać za <b>prawdziwą albo fałszywą</b></td></tr>
+  </table></div>
+  <p>Pytania i rozkazy <b>nie są zdaniami logicznymi</b>, choć mogą mieć znaczenie prawne. Przykład: „Pozwany zapłacił 10 000 zł” wyraża treść podlegającą ocenie prawdziwości.</p>
+  <div class="box dop"><p><b>Po ludzku:</b> „Pada deszcz” powiedziane dziś przez Ciebie i jutro przez kolegę to <b>dwie wypowiedzi</b>, <b>jedno zdanie</b> i (jeśli chodzi o różne dni) <b>dwa różne sądy</b>. Zdanie w sensie logicznym = takie, któremu da się przypisać prawdę albo fałsz.</p></div>
+
+  <h2 id="opis-norma">Zdania opisowe i normatywne <span class="egz">EGZ</span></h2>
+  <div class="compare">
+    <div><h3>Opis</h3><p>Stwierdza, <b>jak jest</b> albo jak było. Np. „Umowę zawarto 4 maja”. Oceniamy <b>prawdziwość</b> i podstawę dowodową.</p></div>
+    <div><h3>Norma</h3><p>Wskazuje <b>nakaz, zakaz albo dozwolenie</b>. Np. „Dłużnik powinien spełnić świadczenie”. Oceniamy <b>obowiązywanie</b>, zakres i sposób uzasadnienia.</p></div>
+  </div>
+  <h3>Prawdziwość, obowiązywanie i uzasadnienie</h3>
+  <ul>
+    <li>Zdanie opisowe może być prawdziwe albo fałszywe.</li>
+    <li>Normę prawną zwykle ocenia się jako <b>obowiązującą albo nieobowiązującą</b>, a nie jako prawdziwą albo fałszywą.</li>
+    <li>Uzasadnienie normy odwołuje się m.in. do źródła prawa, kompetencji organu i reguł interpretacji.</li>
+    <li>Uzasadnienie twierdzenia o faktach wymaga dowodów oraz reguł oceny ich wiarygodności.</li>
+    <li>W argumentacji prawnej oba porządki łączą się, lecz nie należy ich utożsamiać.</li>
+  </ul>
+  <div class="box dop"><p>To samo omawia TiFP: obowiązywanie jako „odpowiednik prawdziwości” dla norm, trzy znaczenia obowiązywania i teorie obowiązywania: <a href="../Teoria%20i%20Filozofia%20Prawa/08_Wyklad_VIII.html">TiFP, Wykład VIII</a>.</p></div>
+
+  <h2 id="modalnosc">Modalność zdań</h2>
+  <div class="table-wrap"><table>
+    <tr><th>Zdanie</th><th>Co głosi</th><th>Słowo-klucz</th></tr>
+    <tr><td><b>asertoryczne</b></td><td>określony stan rzeczy zachodzi albo nie zachodzi</td><td>„jest”</td></tr>
+    <tr><td><b>apodyktyczne</b></td><td>konieczność: dany stan rzeczy nie może być inny</td><td>„musi być”</td></tr>
+    <tr><td><b>problematyczne</b></td><td>możliwość, a nie rzeczywiste zajście zdarzenia</td><td>„może być”</td></tr>
+  </table></div>
+  <p>Zmiana modalności może niepostrzeżenie <b>wzmocnić albo osłabić tezę</b>.</p>
+  <div class="box dop"><p><b>Przykład z sali sądowej:</b> świadek: „oskarżony <i>mógł</i> tam być” (problematyczne). W piśmie pełnomocnika: „oskarżony <i>był</i> tam” (asertoryczne). Teza została po cichu wzmocniona.</p></div>
+
+  <h2 id="analityczne">Zdania analityczne i syntetyczne</h2>
+  <div class="compare">
+    <div><h3>Analityczne</h3><p>Prawdziwość wynika ze <b>znaczenia słów</b> lub przyjętych definicji. Np. „Każdy kawaler jest nieżonaty”. Nie wymagają dowodu empirycznego, ale zależą od stałości znaczeń.</p></div>
+    <div><h3>Syntetyczne</h3><p>Informują <b>o świecie</b> i wymagają uzasadnienia faktami. Np. „Pozwany był w Warszawie 4 maja”. Ich ocena zależy od dowodów, a nie wyłącznie od języka.</p></div>
+  </div>
+
+  <h2 id="presupozycje">Presupozycje wypowiedzi</h2>
+  <ul>
+    <li><b>Presupozycja</b> to założenie przyjmowane w wypowiedzi <b>jako tło</b>, a nie jej główna teza.</li>
+    <li>Pytanie „Kiedy oskarżony przestał ukrywać dochody?” sugeruje, że wcześniej je ukrywał.</li>
+    <li>Zaprzeczenie zdania nie zawsze usuwa jego presupozycję.</li>
+    <li>W przesłuchaniu należy wykrywać pytania, które przemycają sporne fakty.</li>
+    <li>Bezpodstawna presupozycja nie może zastąpić przesłanki wymagającej dowodu.</li>
+  </ul>
+  <div class="box dop"><p>Takie pytania to <b>pytania sugerujące</b> (podchwytliwe). Klasyk: „Czy przestał pan bić żonę?”. Zarówno „tak”, jak i „nie” przyznaje, że bił. W procesie karnym sąd uchyla pytania sugerujące (art. 171 § 6 k.p.k.).</p></div>
+
+  <h2 id="wieloznacznosc">Wieloznaczność, nieostrość i kontekst <span class="egz">EGZ</span></h2>
+  <div class="compare">
+    <div><h3>Wieloznaczność</h3><p>Jedno wyrażenie ma <b>kilka odrębnych znaczeń</b>. Np. „organ” jako instytucja albo osoba działająca za instytucję.</p></div>
+    <div><h3>Nieostrość</h3><p>Granica zakresu wyrażenia <b>nie jest dokładna</b>. Np. „znaczna szkoda” albo „niezwłocznie”.</p></div>
+  </div>
+  <p>Kontekst przepisu, gałąź prawa i cel regulacji wpływają na wybór znaczenia.</p>
+  <div class="box dop"><p><b>Różnica:</b> przy wieloznaczności trzeba <b>wybrać</b> jedno z kilku znaczeń („zamek”: budowla czy w drzwiach?). Przy nieostrości znaczenie jest jedno, ale są <b>przypadki graniczne</b> (czy 3 dni to jeszcze „niezwłocznie”?). Kodeks karny wyostrza „znaczną szkodę”: powyżej 200 000 zł (art. 115 § 5 k.k.).</p></div>
+
+  <!-- ================= FISZKI ================= -->
+  <h2 id="fiszki-sekcja">Fiszki</h2>
+  <p class="muted">Kliknij kartę albo naciśnij spację, żeby ją odwrócić. Strzałki ← → przełączają karty.</p>
+  <div id="fiszki"></div>
+
+  <!-- ================= TEST ================= -->
+  <h2 id="test">Mini-test</h2>
+  <p class="quiz-score" id="quiz-score">Kliknij odpowiedź.</p>
+  <div class="quiz" id="quiz"></div>
+  <button type="button" class="quiz-reset" id="quiz-reset">↺ Od nowa</button>
+
+  <footer>Logika prawnicza · Zajęcia I · slajdy „Podstawy logiki dla prawników. Wykład wprowadzający”</footer>
+</main>
+
+<script>
+window.FISZKI = [
+ {
+  "tag": "",
+  "q": "Wypowiedź, zdanie i sąd: różnica?",
+  "a": "<b>Wypowiedź:</b> konkretny akt użycia języka. <b>Zdanie</b> (gramatyczne): budowa, nie zawsze stwierdza fakt. <b>Sąd:</b> treść, która jest prawdziwa albo fałszywa."
+ },
+ {
+  "tag": "",
+  "q": "Czy pytania i rozkazy są zdaniami logicznymi?",
+  "a": "Nie: nie są prawdziwe ani fałszywe (choć mogą mieć znaczenie prawne)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Zdanie opisowe a normatywne: co oceniamy?",
+  "a": "Opisowe: <b>prawdziwość</b> (i dowody). Normatywne: <b>obowiązywanie</b>, zakres, uzasadnienie."
+ },
+ {
+  "tag": "",
+  "q": "Czym uzasadniamy normę, a czym twierdzenie o faktach?",
+  "a": "Normę: źródło prawa, kompetencja organu, reguły interpretacji. Fakty: dowody i reguły oceny ich wiarygodności."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Zdanie asertoryczne, apodyktyczne, problematyczne?",
+  "a": "Asertoryczne: „jest” (zachodzi/nie zachodzi). Apodyktyczne: „musi być” (konieczność). Problematyczne: „może być” (możliwość)."
+ },
+ {
+  "tag": "",
+  "q": "Zdanie analityczne a syntetyczne?",
+  "a": "Analityczne: prawdziwe z mocy znaczenia słów („kawaler jest nieżonaty”). Syntetyczne: informują o świecie, wymagają faktów."
+ },
+ {
+  "tag": "",
+  "q": "Czym jest presupozycja?",
+  "a": "Założenie przyjęte w wypowiedzi jako tło, nie główna teza (np. „Kiedy przestał ukrywać dochody?” zakłada, że ukrywał)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Wieloznaczność a nieostrość?",
+  "a": "Wieloznaczność: kilka odrębnych znaczeń („organ”). Nieostrość: niedokładna granica zakresu („znaczna szkoda”, „niezwłocznie”)."
+ }
+];
+window.QUIZ = [
+ {
+  "q": "Treść, którą można uznać za prawdziwą albo fałszywą, to:",
+  "o": [
+   "wypowiedź",
+   "sąd (propozycja)",
+   "rozkaz",
+   "presupozycja"
+  ],
+  "c": 1,
+  "w": "Sąd = treść oceniana pod kątem prawdziwości."
+ },
+ {
+  "q": "Normę prawną zwykle ocenia się jako:",
+  "o": [
+   "prawdziwą albo fałszywą",
+   "obowiązującą albo nieobowiązującą",
+   "analityczną albo syntetyczną",
+   "ostrą albo nieostrą"
+  ],
+  "c": 1,
+  "w": "Norma nie jest prawdziwa ani fałszywa; obowiązuje albo nie."
+ },
+ {
+  "q": "Zdanie „Oskarżony mógł być na miejscu zdarzenia” jest:",
+  "o": [
+   "asertoryczne",
+   "apodyktyczne",
+   "problematyczne",
+   "analityczne"
+  ],
+  "c": 2,
+  "w": "Wskazuje możliwość."
+ },
+ {
+  "q": "„Każdy kawaler jest nieżonaty” to zdanie:",
+  "o": [
+   "syntetyczne",
+   "analityczne",
+   "normatywne",
+   "problematyczne"
+  ],
+  "c": 1,
+  "w": "Prawdziwe z mocy znaczenia słów."
+ },
+ {
+  "q": "„Znaczna szkoda” to przykład wyrażenia:",
+  "o": [
+   "wieloznacznego",
+   "nieostrego",
+   "pustego",
+   "analitycznego"
+  ],
+  "c": 1,
+  "w": "Granica zakresu jest niedokładna."
+ },
+ {
+  "q": "Pytanie „Kiedy oskarżony przestał ukrywać dochody?” zawiera:",
+  "o": [
+   "presupozycję",
+   "zdanie analityczne",
+   "definicję",
+   "podział logiczny"
+  ],
+  "c": 0,
+  "w": "Zakłada, że wcześniej ukrywał."
+ }
+];
+</script>
+<script src="../_zeszyt/zeszyt.js"></script>
+</body>
+</html>

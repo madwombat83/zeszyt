@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logika prawnicza – Zajęcia II: podział logiczny, semantyka nazw</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_zeszyt/zeszyt.css">
+<script>try{var p=JSON.parse(localStorage.getItem("zeszyt.paper"));if(p)document.documentElement.setAttribute("data-paper",p);var t=JSON.parse(localStorage.getItem("zeszyt.theme"));if(t&&t!=="auto")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+<header class="toolbar">
+  <div class="crumbs"><a href="../index.html">Zeszyt</a> <span>/</span> Logika prawnicza <span>/</span> Zajęcia II (21.11)</div>
+  <div class="switch" id="paper-switch"><b>Tło:</b></div>
+  <div class="switch" id="theme-switch"><b>Motyw:</b></div>
+</header>
+
+<main class="page">
+  <h1>Logika prawnicza – Zajęcia II</h1>
+  <p class="subtitle">Podział logiczny · semantyka nazw: desygnat, zakres, rodzaje nazw · stosunki między zakresami · 21.11.2026 · <b>slajdy (PDF)</b> + notatki · wcześniej: <a href="01_Zajecia_I.html">Zajęcia I</a></p>
+  <div class="box">
+    <p><b>Jak czytać tę stronę:</b> zwykły tekst i szare ramki = <b>slajdy prowadzącego</b>. Zielone = moje uzupełnienia i wyjaśnienia, czerwone = do sprawdzenia (błędy lub literówki na slajdach).</p>
+  </div>
+
+  <nav class="toc"><ul>
+    <li><a href="#sciaga">Ściąga</a></li>
+    <li><a href="#podzial">Podział logiczny</a></li>
+    <li><a href="#czyn">Przykład: czyn zabroniony</a></li>
+    <li><a href="#semantyka">Semantyka nazw</a></li>
+    <li><a href="#liczba">Nazwy wg liczby desygnatów</a></li>
+    <li><a href="#ontologia">Nazwy konkretne i abstrakcyjne</a></li>
+    <li><a href="#stosunki">Stosunki między zakresami</a></li>
+  </ul></nav>
+
+  <h2 id="sciaga">Ściąga</h2>
+  <div class="sticky">
+    <span class="hand">Na jednej kartce</span>
+    <p><b>Podział logiczny:</b> warunek <b>wykluczania</b> (zakresy się nie nakładają) + warunek <b>zupełności</b> (razem dają całość).</p>
+    <p><b>Desygnat</b> = rzecz, o której zgodnie z prawdą orzec można nazwę. <b>Zakres</b> = zbiór desygnatów.</p>
+    <p><b>Nazwy:</b> ogólna (&gt;1) · jednostkowa (=1) · pusta (0) · konkretna / abstrakcyjna.</p>
+    <p><b>Stosunki:</b> zawierania (podrzędność, równoważność, nadrzędność) · krzyżowania (niezależność, podprzeciwieństwo) · wykluczania (przeciwieństwo, sprzeczność).</p>
+  </div>
+
+  <h2 id="podzial">Podział logiczny <span class="egz">EGZ</span></h2>
+  <div class="box">
+    <p><b>Podziałem logicznym zakresu nazwy</b> nazywamy proces myślowy polegający na dobraniu nazw podrzędnych do nazwy, której zakres dzielimy, w ten sposób, że zakresy nazw podrzędnych <b>się wykluczają</b> (<b>warunek wykluczania</b>), a ich suma daje zakres nazwy dzielonej (<b>warunek zupełności</b>).</p>
+  </div>
+  <p><b>Przykład ze slajdu:</b> student → stacjonarny / niestacjonarny.</p>
+  <div class="box dop"><p><b>Po ludzku:</b> każdy element całości musi trafić do <b>dokładnie jednej</b> szuflady. Jeśli coś trafia do dwóch szuflad, podział nie jest rozłączny (błąd wykluczania). Jeśli coś nie trafia do żadnej, podział jest niezupełny. Przykład złego podziału: „studenci: prawa, administracji i zaoczni” łamie oba warunki naraz, bo student zaoczny prawa jest w dwóch szufladach, a student medycyny dzienny w żadnej. Nazwę dzieloną nazywamy <b>całością podziału</b>, a nazwy podrzędne <b>członami podziału</b>.</p></div>
+
+  <h2 id="czyn">Przykład z prawa: czyn zabroniony <span class="egz">EGZ</span></h2>
+  <div class="box">
+    <p><b>Art. 7 § 1 k.k.:</b> Przestępstwo jest zbrodnią albo występkiem.</p>
+    <p><b>Art. 115 § 1 k.k.:</b> Czynem zabronionym jest zachowanie o znamionach określonych w ustawie karnej.</p>
+    <p><b>Art. 47 § 1 k.w.</b> (wg slajdu): Czynem zabronionym jest zachowanie o znamionach określonych w ustawie karnej.</p>
+  </div>
+  <div class="table-wrap"><table>
+    <tr><th colspan="3" style="text-align:center">czyn zabroniony</th></tr>
+    <tr><th colspan="2" style="text-align:center">przestępstwo</th><th style="text-align:center">wykroczenie</th></tr>
+    <tr><td style="text-align:center">zbrodnia</td><td style="text-align:center">występek</td><td></td></tr>
+  </table></div>
+  <div class="box"><p><b>Z notatek z zajęć:</b> czyn zabroniony dzieli się na wykroczenie i przestępstwo, a przestępstwo na zbrodnię i występek.</p></div>
+  <div class="box dop"><p><b>Czym się różnią</b> (art. 7 § 2–3 k.k.): <b>zbrodnia</b> to czyn zagrożony karą pozbawienia wolności na czas <b>nie krótszy od 3 lat</b> albo surowszą (np. zabójstwo). <b>Występek</b> to czyn zagrożony grzywną powyżej 30 stawek dziennych, karą ograniczenia wolności albo pozbawienia wolności przekraczającą miesiąc (np. kradzież). <b>Wykroczenie</b> to drobniejszy czyn z kodeksu wykroczeń (np. kradzież do 800 zł, przejście na czerwonym). To dwustopniowy podział logiczny: oba warunki spełnione na każdym poziomie.</p></div>
+  <div class="box check"><p>Slajd przy art. 47 § 1 k.w. powtarza słowo w słowo definicję z k.k. („w ustawie karnej”). Sprawdź w tekście kodeksu wykroczeń, czy to dokładne brzmienie, bo mogło zostać skopiowane z poprzedniego punktu.</p></div>
+
+  <h2 id="semantyka">Semantyka nazw <span class="egz">EGZ</span></h2>
+  <div class="box">
+    <p><b>a) Desygnat nazwy</b> – desygnatem nazwy A jest rzecz, o której zgodnie z prawdą orzec można A.</p>
+    <p><b>b) Relacja oznaczania</b> – relacja zachodząca między nazwą a jej desygnatem.</p>
+    <p><b>c) Zakres nazwy</b> – zbiór desygnatów danej nazwy.</p>
+    <p><b>Zbiór w sensie dystrybutywnym</b> (np. zakres nazwy) – zbiór A jest tożsamy ze zbiorem B, gdy każdy element zbioru A należy do zbioru B. Nie jest tożsamy ze zbiorem w sensie <b>kolektywnym</b>, czyli całością składającą się z części.</p>
+  </div>
+  <div class="box"><p><b>Z notatek z zajęć:</b> desygnat nazwy (omawiany na zajęciach).</p></div>
+  <div class="box dop"><p><b>Po ludzku:</b> desygnat nazwy „pies” to każdy konkretny pies, np. Twój Burek, bo o Burku prawdziwie powiesz „to jest pies”. Zakres nazwy „pies” to zbiór wszystkich psów. <b>Dystrybutywnie</b> „las” to zbiór drzew (każde drzewo jest elementem). <b>Kolektywnie</b> las to całość z częściami: drzewa, ale też gałęzie, liście i ściółka. Gałąź jest częścią lasu kolektywnego, ale nie jest elementem zbioru drzew.</p></div>
+  <div class="box check"><p>Definicja tożsamości zbiorów na slajdzie jest niepełna: „każdy element A należy do B” to definicja <b>zawierania się</b> A w B. Tożsamość wymaga obu kierunków: każdy element A należy do B <b>i</b> każdy element B należy do A.</p></div>
+
+  <h2 id="liczba">Podział nazw ze względu na liczbę desygnatów <span class="egz">EGZ</span></h2>
+  <div class="table-wrap"><table>
+    <tr><th>Nazwa</th><th>Liczba desygnatów</th><th>Przykład</th></tr>
+    <tr><td><b>ogólna</b></td><td>więcej niż jeden</td><td>rzeka</td></tr>
+    <tr><td><b>jednostkowa</b></td><td>dokładnie jeden</td><td>najdłuższa rzeka świata; polski laureat pokojowej Nagrody Nobla</td></tr>
+    <tr><td><b>pusta</b></td><td>żadnego (zakres = zbiór pusty)</td><td>jednorożec</td></tr>
+  </table></div>
+  <div class="box">
+    <p>Nazwa jednostkowa:</p>
+    <ul>
+      <li><b>w kategorii syntaktycznej</b> – liczbę desygnatów wyznacza <b>struktura języka</b> (np. najdłuższa rzeka świata);</li>
+      <li><b>w kategorii semantycznej</b> – liczbę desygnatów wyznacza <b>rzeczywistość pozajęzykowa</b> (np. polski laureat pokojowej Nagrody Nobla).</li>
+    </ul>
+  </div>
+  <div class="box dop"><p><b>Po ludzku:</b> „najdłuższa rzeka świata” już z samej budowy (stopień najwyższy) może mieć najwyżej jeden desygnat. „Polski laureat pokojowej Nagrody Nobla” ma jeden desygnat (Lech Wałęsa, 1983) tylko dlatego, że tak się złożyło. Gdyby jutro nagrodę dostał drugi Polak, nazwa stałaby się ogólna.</p></div>
+
+  <h2 id="ontologia">Nazwy konkretne i abstrakcyjne</h2>
+  <div class="box">
+    <p><b>a) Nazwy konkretne</b> – odnoszą się do rzeczy ze świata przedmiotowego (np. krzesło, mikrofon, ale też nimfa).</p>
+    <p><b>b) Nazwy abstrakcyjne</b> – wskazują na pewne cechy wspólne, na pewien stan lub stosunek (np. cnota, miłość, cisza).</p>
+    <p><b>c) Błąd hipostazowania</b> – dopatrywanie się cech desygnatów nazwy konkretnej w desygnatach nazwy abstrakcyjnej.</p>
+    <p><b>Czy i jak istnieją nazwy abstrakcyjne?</b> Idealizm (Platon) i reizm (Kotarbiński).</p>
+  </div>
+  <div class="box check">
+    <p>Na slajdzie są dwie pomyłki w opisie sporu:</p>
+    <p>1) <b>Idealizm (Platon):</b> slajd mówi, że „nazwy konkretne istnieją realnie w świecie idei”. U Platona realnie i obiektywnie istnieją <b>przedmioty abstrakcyjne</b> (idee, np. Dobro, Sprawiedliwość), i to one są bardziej rzeczywiste niż konkrety.</p>
+    <p>2) <b>Reizm (Kotarbiński</b>, na slajdzie „Kotrabiński”): istnieją tylko <b>rzeczy</b> (konkrety). Nazwy abstrakcyjne to <b>nazwy pozorne</b> (onomatoidy), a traktowanie ich jak nazw rzeczy to hipostaza.</p>
+  </div>
+  <div class="box dop"><p><b>Hipostaza po ludzku:</b> „sprawiedliwość jest ślepa”, „historia nas osądzi”. Mówimy o abstrakcji, jakby była osobą albo rzeczą. „Nimfa” jest nazwą konkretną, choć pustą: gdyby nimfy istniały, byłyby rzeczami.</p></div>
+  <div class="box">
+    <p><b>Zbiór uniwersalny</b> (uniwersum): zbiór wszystkiego, co istnieje; na schematach oznaczamy go jako odcinek.</p>
+    <p><b>Negacja przynazwowa</b> – negacją przynazwową nazwy A jest nazwa A’ (nie-A), np. pies i nie-pies.</p>
+  </div>
+
+  <h2 id="stosunki">Stosunki między zakresami nazw <span class="egz">EGZ</span></h2>
+  <div class="table-wrap"><table>
+    <tr><th>Grupa</th><th>Stosunek</th><th>Przykład ze slajdu</th><th>Po ludzku</th></tr>
+    <tr><td rowspan="3"><b>zawierania</b></td><td>podrzędność</td><td>pies – ssak</td><td>każdy pies jest ssakiem, ale nie odwrotnie (S ⊂ P)</td></tr>
+    <tr><td>równoważność (zamienność)</td><td>student – słuchacz wyższej uczelni</td><td>zakresy identyczne</td></tr>
+    <tr><td>nadrzędność</td><td>ssak – pies</td><td>odwrotność podrzędności (S ⊃ P)</td></tr>
+    <tr><td rowspan="2"><b>krzyżowania</b></td><td>niezależność (krzyżowanie)</td><td>prawnik – przestępca</td><td>mają część wspólną, każda ma coś „swojego”, razem nie wypełniają uniwersum</td></tr>
+    <tr><td>podprzeciwieństwo</td><td>ssak – nie-pies</td><td>mają część wspólną i razem wypełniają całe uniwersum</td></tr>
+    <tr><td rowspan="2"><b>wykluczania</b></td><td>przeciwieństwo</td><td>profesor – pies</td><td>nic wspólnego, ale razem nie wypełniają uniwersum (jest jeszcze np. kot)</td></tr>
+    <tr><td>sprzeczność</td><td>pies – nie-pies</td><td>nic wspólnego i razem wypełniają całe uniwersum</td></tr>
+  </table></div>
+  <div class="box dop"><p><b>Jak to rozpoznać, 3 pytania:</b> 1) czy zakresy mają część wspólną? Nie → wykluczanie. 2) Czy jeden mieści się w drugim? Tak → zawieranie. 3) Czy razem dają całe uniwersum? To odróżnia sprzeczność od przeciwieństwa oraz podprzeciwieństwo od niezależności. Podział logiczny z początku zajęć to właśnie zakresy w stosunku <b>wykluczania</b>, które razem dają całość.</p></div>
+
+  <!-- ================= FISZKI ================= -->
+  <h2 id="fiszki-sekcja">Fiszki</h2>
+  <p class="muted">Kliknij kartę albo naciśnij spację, żeby ją odwrócić. Strzałki ← → przełączają karty.</p>
+  <div id="fiszki"></div>
+
+  <!-- ================= TEST ================= -->
+  <h2 id="test">Mini-test</h2>
+  <p class="quiz-score" id="quiz-score">Kliknij odpowiedź.</p>
+  <div class="quiz" id="quiz"></div>
+  <button type="button" class="quiz-reset" id="quiz-reset">↺ Od nowa</button>
+
+  <footer>Logika prawnicza · Zajęcia II · 21.11.2026 · slajdy (PDF) + notatki z zajęć</footer>
+</main>
+
+<script>
+window.FISZKI = [
+ {
+  "tag": "EGZ",
+  "q": "Czym jest podział logiczny zakresu nazwy?",
+  "a": "Dobranie nazw podrzędnych tak, by ich zakresy się <b>wykluczały</b> (warunek wykluczania), a ich suma dawała zakres nazwy dzielonej (warunek <b>zupełności</b>)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Dwa warunki poprawnego podziału logicznego?",
+  "a": "Warunek <b>wykluczania</b> (rozłączności) i warunek <b>zupełności</b>."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Podział czynu zabronionego?",
+  "a": "Czyn zabroniony → <b>przestępstwo</b> (zbrodnia, występek) i <b>wykroczenie</b>. Art. 7 § 1 k.k.: przestępstwo jest zbrodnią albo występkiem."
+ },
+ {
+  "tag": "",
+  "q": "Zbrodnia a występek (art. 7 k.k.)?",
+  "a": "Zbrodnia: pozbawienie wolności nie krótsze od 3 lat albo surowsza. Występek: grzywna &gt; 30 stawek, ograniczenie wolności albo pozbawienie wolności &gt; 1 miesiąca."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Czym jest desygnat nazwy?",
+  "a": "Desygnatem nazwy A jest rzecz, o której zgodnie z prawdą orzec można A."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Relacja oznaczania i zakres nazwy?",
+  "a": "Oznaczanie: relacja między nazwą a jej desygnatem. Zakres: zbiór desygnatów danej nazwy."
+ },
+ {
+  "tag": "",
+  "q": "Zbiór dystrybutywny a kolektywny?",
+  "a": "Dystrybutywny: zbiór elementów (np. zakres nazwy). Kolektywny: całość złożona z części (las z gałęziami i liśćmi)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Nazwa ogólna, jednostkowa, pusta?",
+  "a": "Ogólna: więcej niż 1 desygnat (rzeka). Jednostkowa: dokładnie 1. Pusta: 0 desygnatów, zakres = zbiór pusty (jednorożec)."
+ },
+ {
+  "tag": "",
+  "q": "Nazwa jednostkowa syntaktycznie a semantycznie?",
+  "a": "Syntaktycznie: liczbę desygnatów wyznacza struktura języka (najdłuższa rzeka świata). Semantycznie: rzeczywistość (polski laureat pokojowej Nagrody Nobla)."
+ },
+ {
+  "tag": "",
+  "q": "Nazwy konkretne a abstrakcyjne?",
+  "a": "Konkretne: rzeczy (krzesło, też nimfa). Abstrakcyjne: cechy, stany, stosunki (cnota, miłość, cisza)."
+ },
+ {
+  "tag": "",
+  "q": "Błąd hipostazowania?",
+  "a": "Traktowanie desygnatów nazwy abstrakcyjnej tak, jakby miały cechy rzeczy (konkretów), np. „sprawiedliwość jest ślepa”."
+ },
+ {
+  "tag": "",
+  "q": "Negacja przynazwowa?",
+  "a": "Dla nazwy A to nazwa nie-A (A’), np. pies i nie-pies."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Stosunki zawierania?",
+  "a": "Podrzędność (pies – ssak), równoważność (student – słuchacz wyższej uczelni), nadrzędność (ssak – pies)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Stosunki krzyżowania?",
+  "a": "Niezależność (prawnik – przestępca) i podprzeciwieństwo (ssak – nie-pies: część wspólna + razem całe uniwersum)."
+ },
+ {
+  "tag": "EGZ",
+  "q": "Przeciwieństwo a sprzeczność?",
+  "a": "Obie wykluczają się. <b>Sprzeczność</b> (pies – nie-pies): razem dają całe uniwersum. <b>Przeciwieństwo</b> (profesor – pies): nie dają."
+ }
+];
+window.QUIZ = [
+ {
+  "q": "Podział „studenci: prawa, administracji i zaoczni” narusza:",
+  "o": [
+   "tylko warunek zupełności",
+   "tylko warunek wykluczania",
+   "oba warunki",
+   "żadnego"
+  ],
+  "c": 2,
+  "w": "Zaoczny student prawa jest w dwóch członach (wykluczanie), a dzienny student medycyny w żadnym (zupełność)."
+ },
+ {
+  "q": "Zgodnie z art. 7 § 1 k.k. przestępstwo jest:",
+  "o": [
+   "zbrodnią albo wykroczeniem",
+   "zbrodnią albo występkiem",
+   "występkiem albo wykroczeniem",
+   "czynem zabronionym albo wykroczeniem"
+  ],
+  "c": 1,
+  "w": "Zbrodnia albo występek."
+ },
+ {
+  "q": "Zakres nazwy to:",
+  "o": [
+   "relacja między nazwą a desygnatem",
+   "zbiór desygnatów nazwy",
+   "treść nazwy",
+   "całość złożona z części"
+  ],
+  "c": 1,
+  "w": "Zakres = zbiór desygnatów."
+ },
+ {
+  "q": "„Jednorożec” to nazwa:",
+  "o": [
+   "ogólna",
+   "jednostkowa",
+   "pusta",
+   "abstrakcyjna"
+  ],
+  "c": 2,
+  "w": "Brak desygnatów, zakres to zbiór pusty."
+ },
+ {
+  "q": "„Najdłuższa rzeka świata” jest nazwą jednostkową w kategorii:",
+  "o": [
+   "semantycznej",
+   "syntaktycznej",
+   "ontologicznej",
+   "pustej"
+  ],
+  "c": 1,
+  "w": "Liczbę desygnatów wyznacza struktura języka."
+ },
+ {
+  "q": "Stosunek między nazwami „pies” i „ssak” to:",
+  "o": [
+   "nadrzędność",
+   "podrzędność",
+   "równoważność",
+   "krzyżowanie"
+  ],
+  "c": 1,
+  "w": "Zakres „pies” zawiera się w zakresie „ssak”."
+ },
+ {
+  "q": "Stosunek między „pies” a „nie-pies” to:",
+  "o": [
+   "przeciwieństwo",
+   "podprzeciwieństwo",
+   "sprzeczność",
+   "niezależność"
+  ],
+  "c": 2,
+  "w": "Wykluczają się i razem dają całe uniwersum."
+ },
+ {
+  "q": "Stosunek między „profesor” a „pies” to:",
+  "o": [
+   "sprzeczność",
+   "przeciwieństwo",
+   "niezależność",
+   "podrzędność"
+  ],
+  "c": 1,
+  "w": "Wykluczają się, ale razem nie wypełniają uniwersum."
+ },
+ {
+  "q": "Stosunek między „prawnik” a „przestępca” to:",
+  "o": [
+   "niezależność (krzyżowanie)",
+   "wykluczanie",
+   "równoważność",
+   "sprzeczność"
+  ],
+  "c": 0,
+  "w": "Mają część wspólną, każda ma też coś własnego."
+ }
+];
+</script>
+<script src="../_zeszyt/zeszyt.js"></script>
+</body>
+</html>
