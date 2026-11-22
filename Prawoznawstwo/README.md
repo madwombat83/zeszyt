@@ -9,7 +9,7 @@
 ## Ćwiczenia
 | # | Temat | Plik | Status |
 |---|-------|------|--------|
-| notatki | Podstawy prawoznawstwa, podziały prawa, reguły interpretacyjne i inferencyjne (na zaliczenie) | [Cwiczenia_notatki.html](Cwiczenia_notatki.html) | notatki odręczne, 10 fiszek, mini-test 5 pytań |
+| notatki | Podstawy prawoznawstwa, podziały prawa | [Cwiczenia_notatki.html](Cwiczenia_notatki.html) | notatki odręczne, 6 fiszek, mini-test 2 pytania |
 
 ## Zaliczenie
 - Forma: ?
