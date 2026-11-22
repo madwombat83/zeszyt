@@ -12,4 +12,3 @@
 - Lektury: ?
 
 ## Do wyjaśnienia
-- Slajd Zajęć II: brzmienie art. 47 § 1 k.w. (skopiowane z k.k.?).
